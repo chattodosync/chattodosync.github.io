@@ -156,9 +156,14 @@ img {
 /* Content Wrapper */
 .content-wrapper {
     display: flex;
+    flex: 1 0 auto;  
     flex-direction: column;
-    min-height: 100vh;  
+    justify-content: center;  
+    align-items: center;  
+    padding-top: 4rem;  
+    padding-bottom: 4rem;  
 }
+
 
 .content-main {
     flex: 1;  
@@ -176,29 +181,116 @@ img {
 }
 
 /* Styles for medium screens */
-@media (max-width: 1024px) {
+@media (max-width: 1064px) {
+    .page-wrapper header .brand .logo {
+        max-width: 70%;  
+    }
+
+    .page-wrapper header .brand .btn {
+        font-size: 22px;  
+    }
+
+    .page-wrapper header {
+        padding: 1.25rem;  
+    }
+
     .content-wrapper .content-main h2 {
-        margin-top: 2.75rem;
+        margin-top: 5rem;  
+        font-size: 2.25rem;  
         margin-bottom: 2rem;
-        font-size: 3rem; 
+    }
+
+    .content-wrapper .content-main {
+        padding-top: 7rem;  
+    }
+
+    .input-group input[type="email"] {
+        font-size: 1rem;  
+        padding: 1rem;  
+    }
+
+    .input-group .input-group-btn .btn {
+        width: 3.5rem;  
+    }
+
+    footer {
+        font-size: 0.9rem; 
     }
 }
 
 /* Styles for smaller screens */
 @media (max-width: 768px) {
+    .page-wrapper header .brand .logo {
+        max-width: 50%!important;  
+    }
+
+    .page-wrapper header .brand .btn {
+        font-size: 20px!important;  
+    }
+
+    .page-wrapper header {
+        padding: 1rem;  
+    }
+
     .content-wrapper .content-main h2 {
-        margin-top: 2.25rem;
-        margin-bottom: 1.5rem;
         font-size: 2.5rem;  
+        margin-top: 3rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .content-wrapper .content-main {
+        padding-top: 4rem;  
+    }
+
+    .input-group input[type="email"] {
+        font-size: 0.875rem!important; 
+        padding: 1!important; 
+    }
+
+    .input-group .input-group-btn .btn {
+        width: 4rem!important;  
+    }
+
+    footer {
+        font-size: 0.85rem;  
     }
 }
 
-/* Styles for extra small screens */
+/* For extra small screens (mobile) */
 @media (max-width: 480px) {
+    .page-wrapper header .brand .logo {
+        max-width: 40%!important;  
+    }
+
+    .page-wrapper header .brand .btn {
+        font-size: 18px!important;  
+    }
+
+    .page-wrapper header {
+        padding: 0.75rem; 
+    }
+
+    .content-wrapper .content-main {
+        padding-top: 4rem;  
+    }
+
     .content-wrapper .content-main h2 {
-        margin-top: 2rem;
-        margin-bottom: 1.25rem;
         font-size: 2rem;  
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .input-group input[type="email"] {
+        font-size: 0.875rem!important;  
+        padding: 0.875rem!important;  
+    }
+
+    .input-group .input-group-btn .btn {
+        width: 3rem!important;  
+    }
+
+    footer {
+        font-size: 0.75rem;  
     }
 }
 
@@ -215,10 +307,15 @@ img {
 
 /* Footer */
 footer {
+    flex: 0 0 auto; 
     text-align: center;
-    width: 100%;
-    padding: 0.625rem;  
-    background-color: #f4eeee;  
+    padding: 1rem;
+    background-color: #f4eeee;
+    font-size: 1rem;
+}
+
+footer .note {
+    font-size: 1.25rem;
 }
 
 input[type="email"] {
@@ -272,8 +369,8 @@ input[type="email"]:hover {
     background-color: transparent;
     height: 100%;
     outline: none !important;
-    width: 5rem;
-    font-size: 1.5rem;
+    width: 4rem;
+    font-size: 1.25rem;
 }
 
 .input-group .input-group-btn .btn:hover {
@@ -310,6 +407,13 @@ input[type="email"]:hover {
 }
 
 /* Header */
+header {
+    flex: 0 0 auto; /* Header takes up only as much space as needed */
+    position: fixed;
+    width: 100%;
+    z-index: 1000; /* Ensure header is on top */
+}
+
 .page-wrapper header {
     position: fixed;
     z-index: 999;
@@ -330,7 +434,8 @@ input[type="email"]:hover {
 }
 
 .page-wrapper header .brand .logo {
-    margin-right: 950px;
+    margin-right: auto; 
+    max-width: none;
 }
 
 .page-wrapper header .brand .btn {
@@ -348,10 +453,6 @@ input[type="email"]:hover {
     text-align: right
 ;
     pointer-events: auto;
-}
-
-footer .note {
-    font-size: 1.25rem;
 }
 
 mark {
