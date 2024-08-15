@@ -1,5 +1,5 @@
 body, html {
-    height: 100%;
+    height: -webkit-fill-available;
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     overflow: hidden;
@@ -12,6 +12,7 @@ body, html {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    height: -webkit-fill-available;;
 }
 
 a {
@@ -205,231 +206,118 @@ img {
 
 /* Styles for medium screens */
 /* Styles for medium screens */
-@media (max-width: 1064px) {
-    .font-size-20 {
-        font-size: 3vw;
-        margin-top: 6vw;
-        margin-bottom: 2vw;
-    }
-
-    .font-size-30 {
-        font-size: 3.5vw!important;
-        margin-top: 9vw;
-        margin-bottom: 7vw;
-    }
+    @media (max-width: 1064px) {
+        .font-size-20 {
+            font-size: 3vw;
+            margin-top: 6vw;
+            margin-bottom: 2vw;
+        }
     
-    .font-size-60 {
-        font-size: 6vw!important;
+        .font-size-30 {
+            font-size: 3.5vw!important;
+            margin-top: 9vw;
+            margin-bottom: 7vw;
+        }
+        
+        .font-size-60 {
+            font-size: 6vw!important;
+        }
+
+        .input-group input {
+            font-size: 3vw!important;
+            padding: 3vw!important;
+        }
+
+        .page-wrapper header .brand .btn {
+            font-size: 6vw!important;
+        }
+
+        .content-wrapper .content-main {
+            padding-top: 15vw;
+        }
+
+        .input-group input[type="email"] {
+            font-size: 1.5vw;
+            padding: 1.75vw;
+        }
+
+        footer .note {
+            padding: 4vw;
+            font-size: 2.5vw!important;
+        }
+
+        .alert {
+            height: 7vw!important;
+            font-size: 4vw!important;
+        }
     }
 
-    .input-group input {
-        font-size: 3vw!important;
-        padding: 3vw!important;
+    /* Styles for smaller screens */
+    @media (max-width: 768px) {
+        .font-size-20 {
+            font-size: 3vw;
+            margin-top: 7vw;
+            margin-bottom: 2vw;
+        }
+
+        .font-size-30 {
+            font-size: 3vw!important;
+            margin-top: 7vw;
+            margin-bottom: 4vw;
+        }
+        
+        .font-size-60 {
+            font-size: 6vw!important;
+        }
+
+        footer .note {
+            font-size: 3vw!important;
+        }
+
+        .alert {
+            height: 5vw!important;
+            font-size: 3vw!important;
+        }
     }
 
-    .btn{
-        text-align: center;
-    font-size: 4vw!important;
-    padding: 1vw 2vw!important;
-    }
+    /* For extra small screens (mobile) */
+    @media (max-width: 480px) {
+        .font-size-20 {
+            font-size: 4vw;
+            margin-top: 15vw;
+        }
 
-    .page-wrapper header .brand .logo {
-        max-width: 70%;
-    }
+        .font-size-30 {
+            font-size: 5vw!important;
+            margin-top: 15vw;
+            margin-bottom: 20vw;
+        }
+        
+        .font-size-60 {
+            font-size: 7vw!important;
+        }
 
-    .page-wrapper header .brand .btn {
-        font-size: 6vw!important    ;
-    }
+        .input-group input[type="email"] {
+            padding: 5vw!important;
+        }
 
-    .page-wrapper header {
-        padding: 1.25vw;
-    }
+        .input-group .input-group-btn .btn {
+            width: 15vw!important;
+        }
+        
+        footer .note {
+            font-size: 4vw!important;
+        }
 
-    .content-wrapper .content-main h2 {
-        margin-top: 25vw;
-        font-size: 3vw;
-        margin-bottom: 2vw;
-    }
+        .alert {
+            height: 5vw!important;
+            font-size: 3vw!important;
+        }
 
-    .content-wrapper .content-main {
-        padding-top: 7vw;
+        .logo{
+            max-width: 250px!important;
+        }
     }
-
-    .input-group input[type="email"] {
-        font-size: 1.5vw;
-        padding: 1.75vw;
-    }
-
-    .input-group .input-group-btn .btn {
-        width: 5vw;
-    }
-
-    footer {
-        padding: 0.25vw;
-        font-size: 1.5vw;
-    }
-
-    footer .note {
-        padding: 4vw;
-        margin-top: 0;
-        font-size: 1.25vw;
-    }
-
-    .alert {
-        height: 7vw!important;
-        font-size: 4vw!important;
-    }
-}
-
-/* Styles for smaller screens */
-@media (max-width: 768px) {
-    .font-size-20 {
-        font-size: 3vw;
-        margin-top: 7vw;
-        margin-bottom: 2vw;
-    }
-
-    .font-size-30 {
-        font-size: 3vw!important;
-        margin-top: 7vw;
-        margin-bottom: 4vw;
-    }
-    
-    .font-size-60 {
-        font-size: 6vw!important;
-    }
-
-    .page-wrapper header .brand .logo {
-        max-width: 50%;
-    }
-
-    .page-wrapper header .brand .btn {
-        font-size: 2vw;
-    }
-
-    .page-wrapper header {
-        padding: 1vw;
-    }
-
-    .content-wrapper .content-main h2 {
-        font-size: 3vw;
-        margin-top: 25vw;
-        margin-bottom: 1.25vw;
-    }
-
-    .content-wrapper .content-main {
-        padding-top: 4vw;
-    }
-
-    .input-group input[type="email"] {
-        font-size: 3vw!important;
-        padding: 1.25vw;
-    }
-
-    .input-group .input-group-btn .btn {
-        width: 4vw;
-    }
-
-    footer {
-        padding: 0.125vw;
-        font-size: 1.5vw;
-    }
-
-    footer .note {
-        padding: 2vw;
-        margin-top: 0;
-        font-size: 3vw!important;
-    }
-
-    .alert {
-        height: 5vw!important;
-        font-size: 3vw!important;
-    }
-
-    .logo{
-        width: 1vw;
-    max-width: 30px;
-    }
-}
-
-/* For extra small screens (mobile) */
-@media (max-width: 480px) {
-    .font-size-20 {
-        font-size: 4vw;
-        margin-top: 15vw;
-        margin-bottom: 0vw;
-    }
-
-    .font-size-30 {
-        font-size: 5vw!important;
-        margin-top: 15vw;
-        margin-bottom: 20vw;
-    }
-    
-    .font-size-60 {
-        font-size: 7vw!important;
-    }
-
-    .page-wrapper header .brand .logo {
-        max-width: 55%;
-    }
-
-    .page-wrapper header .brand .btn {
-        font-size: 2vw;
-    }
-
-    .page-wrapper header {
-        padding: 3vw;
-    }
-
-    .content-wrapper .content-main {
-        padding-top: 4vw;
-    }
-
-    .content-wrapper .content-main h2 {
-        font-size: 2.5vw;
-        margin-top: 30vw!important;
-        margin-bottom: 1vw;
-    }
-
-    .input-group input[type="email"] {
-        height: 15vw;
-        font-size: 4vw!important;
-        padding: 5vw!important;
-    }
-
-    .input-group .input-group-btn .btn {
-        width: 21vw;
-    }
-
-    footer {
-        padding: 0.25vw; 
-        font-size: 1.25vw;
-    }
-    
-    footer .note {
-        margin-bottom: 17vw;
-        margin-top: 0;
-        font-size: 4vw!important;
-    }
-    
-
-    .alert {
-        height: 5vw!important;
-        font-size: 3vw!important;
-    }
-
-    .logo{
-        width: 50vw!important;
-        max-width: 250px!important;
-    }
-
-    .btn{
-        text-align: center;
-    font-size: 6vw!important;
-    padding: 1vw 2vw!important;
-    }
-}
 
     
 .content-wrapper .content-main form {
