@@ -26,10 +26,27 @@ function submitForm(e) {
     //analytics
     firebase.analytics().logEvent('email_submission', { email: email });
 
-    document.querySelector('.alert').style.display = 'block';
+    // Get the <h3> element
+    const subtextElement = document.querySelector('.subtext.opacity-60.font-size-30');
+    // Get the alert div
+    const alertElement = document.querySelector('.alert');
+
+    if (subtextElement) {
+        subtextElement.style.display = 'none';
+    }
+    if (alertElement) {
+        alertElement.textContent = 'Email successfully sent';
+        alertElement.style.display = 'block';
+    }
+
     setTimeout(() => {
-        document.querySelector(".alert").style.display = "none";
-      }, 3000);
+        if (alertElement) {
+            alertElement.style.display = 'none';
+        }
+        if (subtextElement) {
+            subtextElement.style.display = 'block';
+        }
+    }, 3000);
 
     document.getElementById('contactForm').reset();
 }

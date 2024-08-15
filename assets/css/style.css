@@ -2,10 +2,16 @@ body, html {
     height: 100%;
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
-    overflow: auto;
+    overflow: hidden;
     position: relative;
     margin-right: 0 !important;
     margin: 0;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
 a {
@@ -108,8 +114,10 @@ img {
 }
 
 .subtext {
+    max-height: 5vw;
     font-style: italic;
     font-weight: normal;
+    font-size: 20px!important;
 }
 
 .note {
@@ -119,17 +127,34 @@ img {
 }
 
 .font-size-20 {
-    font-size: 1.25rem;
+    margin-top: 2vw;
+    font-size: 1.5vw;
 }
 
 .font-size-30 {
-    font-size: 1.875rem;
-    margin-top: 90px;
-    margin-bottom: 60px;
+    font-size: 2vw;
+    margin-top: 3vw;
+    margin-bottom: 1vw;
 }
 
 .font-size-60 {
-    font-size: 3.75rem;
+    font-size: 3vw;
+}
+
+.input-group input {
+    font-size: 1.125vw!important;
+    padding: 1.75vw!important;
+}
+
+.btn {
+    text-align: center;
+    font-size: 2vw!important;
+    padding: 1vw 2vw!important;
+}
+
+.logo {
+    width: 15vw;
+    max-width: 250px;
 }
 
 .opacity-90 {
@@ -160,8 +185,6 @@ img {
     flex-direction: column;
     justify-content: center;  
     align-items: center;  
-    padding-top: 4rem;  
-    padding-bottom: 4rem;  
 }
 
 
@@ -176,124 +199,239 @@ img {
 }
 
 .content-wrapper .content-main h2 {
-    margin-top: 3.25rem;
+    margin-top: 6rem;
     margin-bottom: 2.5rem;
 }
 
 /* Styles for medium screens */
+/* Styles for medium screens */
 @media (max-width: 1064px) {
+    .font-size-20 {
+        font-size: 3vw;
+        margin-top: 6vw;
+        margin-bottom: 2vw;
+    }
+
+    .font-size-30 {
+        font-size: 3.5vw!important;
+        margin-top: 9vw;
+        margin-bottom: 7vw;
+    }
+    
+    .font-size-60 {
+        font-size: 6vw!important;
+    }
+
+    .input-group input {
+        font-size: 3vw!important;
+        padding: 3vw!important;
+    }
+
+    .btn{
+        text-align: center;
+    font-size: 4vw!important;
+    padding: 1vw 2vw!important;
+    }
+
     .page-wrapper header .brand .logo {
-        max-width: 70%;  
+        max-width: 70%;
     }
 
     .page-wrapper header .brand .btn {
-        font-size: 22px;  
+        font-size: 6vw!important    ;
     }
 
     .page-wrapper header {
-        padding: 1.25rem;  
+        padding: 1.25vw;
     }
 
     .content-wrapper .content-main h2 {
-        margin-top: 5rem;  
-        font-size: 2.25rem;  
-        margin-bottom: 2rem;
+        margin-top: 25vw;
+        font-size: 3vw;
+        margin-bottom: 2vw;
     }
 
     .content-wrapper .content-main {
-        padding-top: 7rem;  
+        padding-top: 7vw;
     }
 
     .input-group input[type="email"] {
-        font-size: 1rem;  
-        padding: 1rem;  
+        font-size: 1.5vw;
+        padding: 1.75vw;
     }
 
     .input-group .input-group-btn .btn {
-        width: 3.5rem;  
+        width: 5vw;
     }
 
     footer {
-        font-size: 0.9rem; 
+        padding: 0.25vw;
+        font-size: 1.5vw;
+    }
+
+    footer .note {
+        padding: 4vw;
+        margin-top: 0;
+        font-size: 1.25vw;
+    }
+
+    .alert {
+        height: 7vw!important;
+        font-size: 4vw!important;
     }
 }
 
 /* Styles for smaller screens */
 @media (max-width: 768px) {
+    .font-size-20 {
+        font-size: 3vw;
+        margin-top: 7vw;
+        margin-bottom: 2vw;
+    }
+
+    .font-size-30 {
+        font-size: 3vw!important;
+        margin-top: 7vw;
+        margin-bottom: 4vw;
+    }
+    
+    .font-size-60 {
+        font-size: 6vw!important;
+    }
+
     .page-wrapper header .brand .logo {
-        max-width: 50%!important;  
+        max-width: 50%;
     }
 
     .page-wrapper header .brand .btn {
-        font-size: 20px!important;  
+        font-size: 2vw;
     }
 
     .page-wrapper header {
-        padding: 1rem;  
+        padding: 1vw;
     }
 
     .content-wrapper .content-main h2 {
-        font-size: 2.5rem;  
-        margin-top: 3rem;
-        margin-bottom: 1.25rem;
+        font-size: 3vw;
+        margin-top: 25vw;
+        margin-bottom: 1.25vw;
     }
 
     .content-wrapper .content-main {
-        padding-top: 4rem;  
+        padding-top: 4vw;
     }
 
     .input-group input[type="email"] {
-        font-size: 0.875rem!important; 
-        padding: 1!important; 
+        font-size: 3vw!important;
+        padding: 1.25vw;
     }
 
     .input-group .input-group-btn .btn {
-        width: 4rem!important;  
+        width: 4vw;
     }
 
     footer {
-        font-size: 0.85rem;  
+        padding: 0.125vw;
+        font-size: 1.5vw;
+    }
+
+    footer .note {
+        padding: 2vw;
+        margin-top: 0;
+        font-size: 3vw!important;
+    }
+
+    .alert {
+        height: 5vw!important;
+        font-size: 3vw!important;
+    }
+
+    .logo{
+        width: 1vw;
+    max-width: 30px;
     }
 }
 
 /* For extra small screens (mobile) */
 @media (max-width: 480px) {
+    .font-size-20 {
+        font-size: 4vw;
+        margin-top: 15vw;
+        margin-bottom: 0vw;
+    }
+
+    .font-size-30 {
+        font-size: 5vw!important;
+        margin-top: 15vw;
+        margin-bottom: 20vw;
+    }
+    
+    .font-size-60 {
+        font-size: 7vw!important;
+    }
+
     .page-wrapper header .brand .logo {
-        max-width: 40%!important;  
+        max-width: 55%;
     }
 
     .page-wrapper header .brand .btn {
-        font-size: 18px!important;  
+        font-size: 2vw;
     }
 
     .page-wrapper header {
-        padding: 0.75rem; 
+        padding: 3vw;
     }
 
     .content-wrapper .content-main {
-        padding-top: 4rem;  
+        padding-top: 4vw;
     }
 
     .content-wrapper .content-main h2 {
-        font-size: 2rem;  
-        margin-top: 1rem;
-        margin-bottom: 1rem;
+        font-size: 2.5vw;
+        margin-top: 30vw!important;
+        margin-bottom: 1vw;
     }
 
     .input-group input[type="email"] {
-        font-size: 0.875rem!important;  
-        padding: 0.875rem!important;  
+        height: 15vw;
+        font-size: 4vw!important;
+        padding: 5vw!important;
     }
 
     .input-group .input-group-btn .btn {
-        width: 3rem!important;  
+        width: 21vw;
     }
 
     footer {
-        font-size: 0.75rem;  
+        padding: 0.25vw; 
+        font-size: 1.25vw;
+    }
+    
+    footer .note {
+        margin-bottom: 17vw;
+        margin-top: 0;
+        font-size: 4vw!important;
+    }
+    
+
+    .alert {
+        height: 5vw!important;
+        font-size: 3vw!important;
+    }
+
+    .logo{
+        width: 50vw!important;
+        max-width: 250px!important;
+    }
+
+    .btn{
+        text-align: center;
+    font-size: 6vw!important;
+    padding: 1vw 2vw!important;
     }
 }
 
+    
 .content-wrapper .content-main form {
     pointer-events: auto;
     margin-top: 1.875rem;
@@ -309,9 +447,7 @@ img {
 footer {
     flex: 0 0 auto; 
     text-align: center;
-    padding: 1rem;
     background-color: #f4eeee;
-    font-size: 1rem;
 }
 
 footer .note {
@@ -369,7 +505,7 @@ input[type="email"]:hover {
     background-color: transparent;
     height: 100%;
     outline: none !important;
-    width: 4rem;
+    width: 5rem;
     font-size: 1.25rem;
 }
 
@@ -408,10 +544,10 @@ input[type="email"]:hover {
 
 /* Header */
 header {
-    flex: 0 0 auto; /* Header takes up only as much space as needed */
+    flex: 0 0 auto;  
     position: fixed;
     width: 100%;
-    z-index: 1000; /* Ensure header is on top */
+    z-index: 1000;  
 }
 
 .page-wrapper header {
@@ -445,6 +581,13 @@ header {
     cursor: pointer;
     font-size: 24px; 
     color: #000; 
+    outline: none;
+}
+
+.page-wrapper header .brand .btn:focus {
+    outline: none; 
+    box-shadow: none; 
+    border: none;
 }
 
 .page-wrapper header nav {
@@ -462,6 +605,7 @@ mark {
 
 .alert {
     width: 100%;
+    height: auto;
     background: #00FF6A;  
     color: #333;  
     padding: 15px 25px;  
