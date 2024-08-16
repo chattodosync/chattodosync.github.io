@@ -12,7 +12,6 @@ body, html {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    height: -webkit-fill-available;;
 }
 
 a {
@@ -129,7 +128,7 @@ img {
 
 .font-size-20 {
     margin-top: 2vw;
-    font-size: 1.5vw;
+    font-size: 1.25vw;
 }
 
 .font-size-30 {
@@ -181,11 +180,11 @@ img {
 
 /* Content Wrapper */
 .content-wrapper {
+    flex: 1 0 90vh;  
     display: flex;
-    flex: 1 0 auto;  
     flex-direction: column;
     justify-content: center;  
-    align-items: center;  
+    align-items: center;
 }
 
 
@@ -204,7 +203,6 @@ img {
     margin-bottom: 2.5rem;
 }
 
-/* Styles for medium screens */
 /* Styles for medium screens */
     @media (max-width: 1064px) {
         .font-size-20 {
@@ -241,11 +239,6 @@ img {
             padding: 1.75vw;
         }
 
-        footer .note {
-            padding: 4vw;
-            font-size: 2.5vw!important;
-        }
-
         .alert {
             height: 7vw!important;
             font-size: 4vw!important;
@@ -270,10 +263,6 @@ img {
             font-size: 6vw!important;
         }
 
-        footer .note {
-            font-size: 3vw!important;
-        }
-
         .alert {
             height: 5vw!important;
             font-size: 3vw!important;
@@ -284,13 +273,10 @@ img {
     @media (max-width: 480px) {
         .font-size-20 {
             font-size: 4vw;
-            margin-top: 15vw;
         }
 
         .font-size-30 {
-            font-size: 5vw!important;
-            margin-top: 15vw;
-            margin-bottom: 20vw;
+            font-size: 4vw!important;
         }
         
         .font-size-60 {
@@ -299,23 +285,16 @@ img {
 
         .input-group input[type="email"] {
             padding: 5vw!important;
+            font-size: 4vw!important;
         }
 
         .input-group .input-group-btn .btn {
             width: 15vw!important;
-        }
-        
-        footer .note {
-            font-size: 4vw!important;
-        }
-
-        .alert {
-            height: 5vw!important;
-            font-size: 3vw!important;
+            font-size: 5vw!important;
         }
 
         .logo{
-            max-width: 250px!important;
+            max-width: 200px!important;
         }
     }
 
@@ -331,17 +310,6 @@ img {
     position: relative;
 }
 
-/* Footer */
-footer {
-    flex: 0 0 auto; 
-    text-align: center;
-    background-color: #f4eeee;
-}
-
-footer .note {
-    font-size: 1.25rem;
-}
-
 input[type="email"] {
     border-radius: 0;
     transition: .3s;
@@ -350,13 +318,9 @@ input[type="email"] {
     border: 0 solid transparent;
     color: rgba(0, 0, 0, .6);
     outline: none !important;
-    padding-top: .75rem;
-    padding-bottom: .75rem;
-    padding-left: .75rem;
-    padding-right: .75rem;
     width: 100%;
     height: inherit;
-    font-size: .875rem;
+    padding: 1rem;
 }
 
 input[type="email"]:active, input[type="email"]:focus {
@@ -394,7 +358,7 @@ input[type="email"]:hover {
     height: 100%;
     outline: none !important;
     width: 5rem;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
 }
 
 .input-group .input-group-btn .btn:hover {
@@ -463,11 +427,9 @@ header {
 }
 
 .page-wrapper header .brand .btn {
-    margin-left: 10px; 
     background: none;
     border: none;
     cursor: pointer;
-    font-size: 24px; 
     color: #000; 
     outline: none;
 }
@@ -487,21 +449,19 @@ header {
 }
 
 mark {
-    background-color: #00BF6344;
+    background-color: #db4a2b44;
     color: black;
 }
 
 .alert {
     width: 100%;
-    height: auto;
-    background: #00FF6A;  
+    height: auto; 
     color: #333;  
     padding: 15px 25px;  
     border-radius: 8px;  
     text-align: center;
     font-size: 16px;  
     font-weight: 700;  
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     margin-top: 10px; 
     display: none; 
     transition: opacity 0.3s ease-in-out;  
@@ -533,11 +493,6 @@ mark {
 .dark-mode .input-group .btn {
     background-color: #444444; 
     color: #ffffff; 
-}
- 
-.dark-mode footer {
-    background-color: #1a1a1a;  
-    color: #e0e0e0; 
 }
  
 .dark-mode .input-group input[type="email"] {

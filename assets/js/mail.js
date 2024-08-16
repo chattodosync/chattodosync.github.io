@@ -26,18 +26,19 @@ function submitForm(e) {
     //analytics
     firebase.analytics().logEvent('email_submission', { email: email });
 
-    // Get the <h3> element
-    const subtextElement = document.querySelector('.subtext.opacity-60.font-size-30');
-    // Get the alert div
+    const subtextElement = document.querySelector('.input-group');
+  
     const alertElement = document.querySelector('.alert');
 
+    if (email.trim() !== "") {
     if (subtextElement) {
         subtextElement.style.display = 'none';
     }
     if (alertElement) {
-        alertElement.textContent = 'Email successfully sent';
+        alertElement.textContent = "Thank you! You're on the list!";
         alertElement.style.display = 'block';
     }
+}
 
     setTimeout(() => {
         if (alertElement) {
