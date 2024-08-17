@@ -351,9 +351,9 @@ input[type="email"]:hover {
 
 .input-group .input-group-btn .btn {
     transform: scale(.8);
-    border-radius: 100%;
+    /*border-radius: 100%;*/
     transition: .4s ease;
-    border: .1875rem solid rgba(0, 0, 0, .03);
+    /*border: .1875rem solid rgba(0, 0, 0, .03);*/
     background-color: transparent;
     height: 100%;
     outline: none !important;
@@ -362,7 +362,7 @@ input[type="email"]:hover {
 }
 
 .input-group .input-group-btn .btn:hover {
-    background-color: rgba(0, 0, 0, .03);
+    /*background-color: rgba(0, 0, 0, .03);*/
 }
 
 .input-group input[type="email"] {
@@ -491,7 +491,7 @@ mark {
 }
  
 .dark-mode .input-group .btn {
-    background-color: #444444; 
+    /*background-color: #444444; */
     color: #ffffff; 
 }
  
