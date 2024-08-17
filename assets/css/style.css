@@ -506,3 +506,10 @@ mark {
     background-color: #444444;  
     border-color: #444444;  
 }
+
+*,*:focus,*:hover{
+    outline:none !important;
+}
+
+
+
