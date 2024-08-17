@@ -24,7 +24,7 @@
     <div class="page-wrapper">
         <header>
             <div class="brand animate">
-                <img class="logo" src="./assets/img/new-logo.png" alt="Logo" style="width: 350px">
+                <img class="logo" src="./assets/img/logo.png" alt="Logo" style="width: 350px">
                 <button onclick="toggleDarkMode()" class="btn btn-default">
                     <i class="fa-solid fa-moon"></i>
                 </button>         
@@ -73,17 +73,7 @@
             body.classList.toggle('dark-mode');
         }
 
-        var latitude = 34.038405;
-        var longitude = -117.946944;
-        var markerImage = "assets/img/map-marker.png";
-        var mapTheme = "light";
-        var mapElement = "map";
-
-        $(".modal").on("shown.bs.modal", function () {
-            google.maps.event.addDomListener(window, 'load', simpleMap(latitude, longitude, markerImage, mapTheme, mapElement));
-        });
-
-        var COLOURS = ['#61dfff', '#0FFF50', '#cfff04', '#ff6767'];
+        var COLOURS = ['#db4a2b33', '#db4a2b45', '#db4a2b5c', '#db4a2b80'];
         var radius = 0;
         var randomColor = 0;
 
@@ -92,7 +82,7 @@
             autoclear: false,
             retina: 'auto',
             update: function () {
-                radius = 2 + Math.abs(Math.sin(this.millis * 0.003) * 50);
+                radius = 10 + Math.abs(Math.sin(this.millis * 0.003) * 50);
             },
             click: function () {
                 randomColor = Math.floor(Math.random() * COLOURS.length);
