@@ -115,7 +115,7 @@ function simpleMap(latitude, longitude, markerImage, mapTheme, mapElement){
 
 document.addEventListener('DOMContentLoaded',function(event){
   // array with texts to type in typewriter
-  var dataText = ["Make Your Messages Meaningful", "Take Action on Important Conversations", "Collaboratively Share Your Work", "Feel Accomplished Every Day ✅"];
+  var dataText = ["Make Your Messages Meaningful", "Take Action on Important Conversations", "Collaboratively Share Your Work", "Feel Accomplished Every Day ✔"];
 
   // type one text in the typwriter
   // keeps calling itself until the text is finished
