@@ -117,22 +117,19 @@ img {
     max-height: 5vw;
     font-style: italic;
     font-weight: normal;
-    font-size: 20px!important;
 }
 
 .note {
     opacity: .4;
-    font-size: .75rem;
+    /*font-size: .75rem;*/
     margin: .5rem 0;
 }
 
 .font-size-20 {
     margin-top: 2vw;
-    font-size: 1.25vw;
 }
 
 .font-size-30 {
-    font-size: 2vw;
     margin-top: 3vw;
     margin-bottom: 1vw;
 }
@@ -206,13 +203,13 @@ img {
 /* Styles for medium screens */
     @media (max-width: 1064px) {
         .font-size-20 {
-            font-size: 3vw;
+            font-size: 2vw;
             margin-top: 6vw;
             margin-bottom: 2vw;
         }
     
         .font-size-30 {
-            font-size: 3.5vw!important;
+            font-size: 4.5vw!important;
             margin-top: 9vw;
             margin-bottom: 7vw;
         }
@@ -248,13 +245,13 @@ img {
     /* Styles for smaller screens */
     @media (max-width: 768px) {
         .font-size-20 {
-            font-size: 3vw;
+            font-size: 2.75vw;
             margin-top: 7vw;
             margin-bottom: 2vw;
         }
 
         .font-size-30 {
-            font-size: 3vw!important;
+            font-size: 3.5vw!important;
             margin-top: 7vw;
             margin-bottom: 4vw;
         }
@@ -272,11 +269,11 @@ img {
     /* For extra small screens (mobile) */
     @media (max-width: 480px) {
         .font-size-20 {
-            font-size: 4vw;
+            font-size: 3.25vw;
         }
 
         .font-size-30 {
-            font-size: 4vw!important;
+            font-size: 4.25vw!important;
         }
         
         .font-size-60 {
