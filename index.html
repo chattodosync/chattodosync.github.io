@@ -42,7 +42,7 @@
                         <form class="form" id="contactForm">
                             <div class="alert subtext font-size-30">Thank you! You're on the list!</div>
                             <div class="input-group">
-                                <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" autocomplete="off">
+                                <input type="name" class="form-control" id="email" name="email" placeholder="Your Email" autocomplete="off" required pattern="^(?=[a-zA-Z0-9@.%+-]{6,254}$)(?=[a-zA-Z0-9.%+-]{1,64}@)[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
                                 <span class="input-group-btn">
                                     <button class="btn" type="submit"><i class="arrow_right"></i></button>
                                 </span>
@@ -73,7 +73,7 @@
             body.classList.toggle('dark-mode');
         }
 
-        var COLOURS = ['#db4a2b33', '#db4a2b45', '#db4a2b5c', '#db4a2b80'];
+        var COLOURS = ['#E26254'];
         var radius = 0;
         var randomColor = 0;
 
@@ -82,7 +82,7 @@
             autoclear: false,
             retina: 'auto',
             update: function () {
-                radius = 10 + Math.abs(Math.sin(this.millis * 0.003) * 50);
+                radius = 2 + Math.abs(Math.sin(this.millis * 0.003) * 50);
             },
             click: function () {
                 randomColor = Math.floor(Math.random() * COLOURS.length);

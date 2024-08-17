@@ -231,7 +231,7 @@ img {
             padding-top: 15vw;
         }
 
-        .input-group input[type="email"] {
+        .input-group input[type="name"] {
             font-size: 1.5vw;
             padding: 1.75vw;
         }
@@ -280,7 +280,7 @@ img {
             font-size: 7vw!important;
         }
 
-        .input-group input[type="email"] {
+        .input-group input[type="name"] {
             padding: 5vw!important;
             font-size: 4vw!important;
         }
@@ -307,7 +307,7 @@ img {
     position: relative;
 }
 
-input[type="email"] {
+input[type="name"] {
     border-radius: 0;
     transition: .3s;
     box-shadow: none;
@@ -320,13 +320,13 @@ input[type="email"] {
     padding: 1rem;
 }
 
-input[type="email"]:active, input[type="email"]:focus {
+input[type="name"]:active, input[type="name"]:focus {
     box-shadow: none;
     background-color: rgba(0, 0, 0, .06);
     border-color: #fff;
 }
 
-input[type="email"]:hover {
+input[type="name"]:hover {
     box-shadow: none;
     background-color: rgba(0, 0, 0, .06);
 }
@@ -358,11 +358,7 @@ input[type="email"]:hover {
     font-size: 1.5rem;
 }
 
-.input-group .input-group-btn .btn:hover {
-    /*background-color: rgba(0, 0, 0, .03);*/
-}
-
-.input-group input[type="email"] {
+.input-group input[type="name"] {
     border-radius: 0;
     transition: .3s;
     box-shadow: none;
@@ -379,13 +375,13 @@ input[type="email"]:hover {
     font-size: 1.125rem;
 }
 
-.input-group input[type="email"]:active, .input-group input[type="email"]:focus {
+.input-group input[type="name"]:active, .input-group input[type="name"]:focus {
     box-shadow: none;
     background-color: #fff;
     border-color: #fff;
 }
 
-.input-group input[type="email"]:hover {
+.input-group input[type="name"]:hover {
     box-shadow: none;
     background-color: #fff;
     border-color: #fff;
@@ -492,21 +488,33 @@ mark {
     color: #ffffff; 
 }
  
-.dark-mode .input-group input[type="email"] {
+.dark-mode .input-group input[type="name"] {
     color: #e0e0e0;  
     background-color: #333333;  
     border-color: #333333; 
 }
  
-.dark-mode .input-group input[type="email"]:hover,
-.dark-mode .input-group input[type="email"]:focus {
+.dark-mode .input-group input[type="name"]:hover,
+.dark-mode .input-group input[type="name"]:focus {
     background-color: #444444;  
     border-color: #444444;  
+}
+
+.dark-mode .alert {
+    color: #ffffff;
 }
 
 *,*:focus,*:hover{
     outline:none !important;
 }
 
+input:invalid {
+    border: 1px solid red;
+}
 
 
+
+.red-background {
+    background-color: rgba(255, 0, 0, 0.3)!important;
+    border: rgba(255, 0, 0, 0.3)!important;
+}
