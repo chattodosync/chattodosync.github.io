@@ -512,8 +512,6 @@ input:invalid {
     border: 1px solid red;
 }
 
-
-
 .red-background {
     background-color: rgba(255, 0, 0, 0.3)!important;
     border: rgba(255, 0, 0, 0.3)!important;
