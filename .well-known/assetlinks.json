@@ -1,0 +1,13 @@
+[
+    {
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "com.chattodo",
+        "sha256_cert_fingerprints": [
+          "2C:C7:4D:F9:2E:66:98:AE:95:39:F3:90:31:41:E7:39:27:6C:26:AA:36:D7:77:35:30:9D:DD:F9:CC:0A:16:8F"
+        ]
+      }
+    }
+  ]
+  
