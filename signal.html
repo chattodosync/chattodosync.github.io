@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chattodo - The Signal</title>
+    <meta name="description" content="Why we built Chattodo. Our vision for messaging that matters.">
+    <link rel="icon" type="image/png" href="assets/img/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        .vision-page{padding:140px 0 80px}
+        .vision-page .container{max-width:680px}
+        .v-hero{margin-bottom:64px}
+        .v-hero h1{font-size:clamp(2.4rem,5vw,3.5rem);font-weight:900;letter-spacing:-0.04em;line-height:1.08;margin-bottom:16px}
+        .v-hero p{font-size:1.1rem;color:var(--brown-light);line-height:1.75}
+        .v-section{margin-bottom:48px;padding-bottom:0}
+        .v-section:last-of-type{margin-bottom:32px}
+        .v-section h2{font-size:1.4rem;font-weight:800;letter-spacing:-0.02em;margin-bottom:16px;display:flex;align-items:center;gap:10px}
+        .v-section h2 i{color:var(--salmon);flex-shrink:0}
+        .v-section p{font-size:1.05rem;color:var(--brown-light);line-height:1.85;margin-bottom:16px}
+        .v-section p:last-child{margin-bottom:0}
+        .v-section strong{color:var(--brown);font-weight:700}
+        .v-quote{position:relative;padding:28px 32px;background:var(--cream);border-radius:16px;margin:28px 0;font-size:1.15rem;font-weight:600;color:var(--brown);line-height:1.6;letter-spacing:-0.01em}
+        .v-quote::before{content:'"';position:absolute;top:8px;left:14px;font-size:3rem;color:var(--salmon);opacity:0.3;font-family:Georgia,serif;line-height:1}
+        .v-list{list-style:none;margin:20px 0;display:flex;flex-direction:column;gap:12px}
+        .v-list li{display:flex;align-items:flex-start;gap:10px;font-size:1rem;color:var(--brown-light);line-height:1.6}
+        .v-list li i{color:var(--orange);flex-shrink:0;margin-top:4px}
+        .v-list li strong{color:var(--brown)}
+        .v-cta{text-align:center;padding:48px 0}
+        .v-cta p{font-size:1rem;color:var(--brown-light);margin-bottom:20px}
+        .v-icon-row{display:flex;align-items:center;justify-content:center;gap:12px;margin:24px 0;color:var(--cream-dark)}
+        .v-icon-row i{width:20px;height:20px}
+        @media(max-width:768px){
+            .vision-page{padding:110px 0 60px}
+            .v-section{margin-bottom:40px;padding-bottom:40px}
+            .v-quote{padding:20px 24px;font-size:1.05rem}
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar scrolled" id="navbar">
+    <div class="container" style="max-width:680px">
+        <a href="index.html" class="nav-logo"><img src="assets/img/logo.webp" alt="Chattodo"></a>
+        <div style="display:flex;gap:12px;align-items:center">
+            <a href="index.html" class="btn-outline" style="font-size:12px;padding:8px 18px">Home</a>
+            <a href="#" class="btn-cta" style="font-size:12px;padding:8px 18px"><i data-lucide="download" style="width:12px;height:12px"></i> Download</a>
+        </div>
+    </div>
+</nav>
+
+<div class="vision-page">
+    <div class="container">
+
+        <div class="v-hero reveal">
+            <span class="section-label"><i data-lucide="radio-tower"></i> The Signal</span>
+            <h1>Why we built <span class="accent-salmon">Chattodo</span></h1>
+            <p>This is our signal. A message to everyone who values clarity, focus, and meaningful work. This is why Chattodo exists.</p>
+        </div>
+
+        <div class="v-section reveal">
+            <h2><i data-lucide="volume-x" style="width:22px;height:22px"></i> Noise Solved</h2>
+            <p>Chattodo is a messaging app with three features.</p>
+            <div class="v-quote">Chat. Todo. Team. That's it.</div>
+            <ul class="v-list">
+                <li><i data-lucide="message-circle" style="width:18px;height:18px"></i> <span><strong>Chat:</strong> Messaging. Simple, real-time, human to human.</span></li>
+                <li><i data-lucide="check-circle" style="width:18px;height:18px"></i> <span><strong>Todo:</strong> Double-tap messages to turn them into tasks.</span></li>
+                <li><i data-lucide="users" style="width:18px;height:18px"></i> <span><strong>Team:</strong> Your main 5 &amp; you. 5+1=6 users per circle.</span></li>
+            </ul>
+            <p>Every additional feature and every additional entity in apps is a decision point for the user. More decisions to make means more mechanical interruptions in the flow of your pure thought.</p>
+        </div>
+
+        <div class="v-icon-row"><i data-lucide="minus"></i><i data-lucide="minus"></i><i data-lucide="minus"></i></div>
+
+        <div class="v-section reveal">
+            <h2><i data-lucide="lightbulb" style="width:22px;height:22px"></i> The Question</h2>
+            <div class="v-quote">What if 'just chatting' exactly meant 'just working'?</div>
+            <p>Chattodo is built for:</p>
+            <ul class="v-list">
+                <li><i data-lucide="car" style="width:18px;height:18px"></i> <span><strong>Small teams:</strong> that can fit in 1 car.</span></li>
+                <li><i data-lucide="pointer" style="width:18px;height:18px"></i> <span><strong>1 action:</strong> 0 configuration.</span></li>
+                <li><i data-lucide="brain" style="width:18px;height:18px"></i> <span><strong>No learning curve:</strong> You already know chatting.</span></li>
+            </ul>
+            <p>Users must be mindful of who they onboard. Not everyone should get a seat in their car.</p>
+        </div>
+
+        <div class="v-icon-row"><i data-lucide="minus"></i><i data-lucide="minus"></i><i data-lucide="minus"></i></div>
+
+        <div class="v-section reveal">
+            <h2><i data-lucide="mountain" style="width:22px;height:22px"></i> Moving Mountains</h2>
+            <p>Small teams that are efficient by use of technology can move mountains together. In some cases, perhaps just one person 'teams' will be building billions of dollars worth of companies. Such is this age in tech.</p>
+            <div class="v-quote">Chattodo is for builders who want a quiet room with their main five &mdash; away from privacy compromises, integrations, bots, and feature bloat.</div>
+        </div>
+
+        <div class="v-icon-row"><i data-lucide="minus"></i><i data-lucide="minus"></i><i data-lucide="minus"></i></div>
+
+        <div class="v-section reveal">
+            <h2><i data-lucide="eye" style="width:22px;height:22px"></i> Transparency &amp; Accountability</h2>
+            <p>We have designed the Chattodo mobile app to help our users accomplish increased <strong>transparency</strong> and <strong>accountability</strong> in their team.</p>
+            <p>Similarly, our users must expect absolute transparency and accountability from us. We don't feed the user's data to machine learning. The user's data is their property alone.</p>
+            <div class="v-quote">We have built Chattodo because we needed a minimalistic temple of work for our remote team to chat in. Now we are sharing it.</div>
+            <p>In the world of AI, we are offering our users a productive experience <strong>without the noise</strong> of people and AI. We are anti-bloat. We are for <strong>humans of clarity</strong>.</p>
+        </div>
+
+        <div class="v-icon-row"><i data-lucide="minus"></i><i data-lucide="minus"></i><i data-lucide="minus"></i></div>
+
+        <div class="v-section reveal">
+            <h2><i data-lucide="radio-tower" style="width:22px;height:22px"></i> The Sum</h2>
+            <p>Only human to human chats, with only 6 people, through only 3 core features. Full stop.</p>
+            <div class="v-quote">Noise killed indeed.</div>
+        </div>
+
+        <div class="v-icon-row"><i data-lucide="minus"></i><i data-lucide="minus"></i><i data-lucide="minus"></i></div>
+
+        <div class="v-section reveal">
+            <h2><i data-lucide="shield-check" style="width:22px;height:22px"></i> Trust</h2>
+            <p>Trust is not an afterthought. It is key. We are actively building Chattodo towards full privacy-by-design and ethical product principles &mdash; because that's the standard our users deserve.</p>
+        </div>
+
+        <div class="v-cta reveal">
+            <p>If this resonates with you, Chattodo is yours to try.</p>
+            <a href="#" class="btn-cta" style="padding:14px 32px;font-size:15px"><i data-lucide="download" style="width:16px;height:16px"></i> Download Chattodo</a>
+        </div>
+
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container" style="max-width:680px">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <img src="assets/img/logo.webp" alt="Chattodo">
+                <p>Noise solved. Chat. Todo. Team.<br>Nothing more.</p>
+            </div>
+            <div class="footer-cols">
+                <div class="footer-col"><h5>Product</h5><ul><li><a href="index.html">Home</a></li><li><a href="index.html#features">Features</a></li><li><a href="index.html#download">Download</a></li></ul></div>
+                <div class="footer-col"><h5>Legal</h5><ul><li><a href="privacy-terms.html">Privacy Policy</a></li><li><a href="privacy-terms.html#terms">Terms of Service</a></li></ul></div>
+            </div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2026 Chattodo. All Rights Reserved.</p></div>
+    </div>
+</footer>
+
+<script>
+(function(){
+    lucide.createIcons();
+    var els=document.querySelectorAll('.reveal');
+    var obs=new IntersectionObserver(function(e){for(var j=0;j<e.length;j++){if(e[j].isIntersecting){e[j].target.classList.add('visible');obs.unobserve(e[j].target)}}},{threshold:0.1,rootMargin:'0px 0px -30px 0px'});
+    for(var k=0;k<els.length;k++){obs.observe(els[k])}
+})();
+</script>
+</body>
+</html>
