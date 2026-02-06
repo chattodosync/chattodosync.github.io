@@ -1,518 +1,298 @@
 <!DOCTYPE html>
-
-<html lang="en-US">
+<html lang="en">
 <head>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link href="assets/fonts/font-awesome.css" rel="stylesheet" type="text/css">
-    <link href="assets/fonts/elegant-fonts.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
-    <title>Chattodo · Pre Launch</title>
-
-    <style>
-        body { background-color: #f3f3f3; }
-    </style>
-
+    <title>Chattodo - Messages That Actually Matter</title>
+    <meta name="description" content="The world's first messaging app where every conversation becomes action. Chat, create tasks, and feel accomplished.">
+    <meta property="og:title" content="Chattodo - Messages That Matter">
+    <meta property="og:description" content="Turn conversations into action. The messaging app built for people who get things done.">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
-
 <body>
 
-<div class="page-wrapper">
-    <header>
-        <div class="brand animate"><img class="logo" src="assets/img/logo-1.png" alt="" style="width: 350px"></div>
-    </header>
-    <div class="content-wrapper">
-        <div class="content-main animate">
-            <div class="container">
-                <h2 class="font-size-60" style="line-height:1.5em">Discover the<br/><mark><b>World's First</b></mark><br/>Messaging Experience<br/>that <mark><b>Truly Matters</b></mark></h2>
-                <hr class="custom-hr"/>
-                <h3 class="subtext opacity-60 font-size-30"></h3>
-                <div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
-                    <form class="form">
-                        <div class="input-group">
-                            <input type="text" class="form-control" name="email" placeholder="Your Email">
-                            <span class="input-group-btn">
-                                <button class="btn" type="submit"><i class="arrow_right"></i></button>
-                            </span>
-                        </div>
-                        <p class="note font-size-20 opacity-50"><b>Subscribe Now</b> to be the First to Experience the Future of Communication</p>
-                    </form>
-                    <!--end form-->
-                </div>
-                <!--end col-md-10-->
-            </div>
-            <!--end container-->
-        </div>
-        <!--end content-main-->
-        <div class="background-wrapper">
-            <div id="background-content"></div>
-        </div>
-        <!--end background-wrapper-->
+<nav class="navbar" id="navbar">
+    <div class="container">
+        <a href="#" class="nav-logo"><img src="assets/img/logo.webp" alt="Chattodo"></a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#tasks">Tasks</a></li>
+            <li><a href="#more">More</a></li>
+            <li><a href="#download" class="btn-cta">Get the App</a></li>
+        </ul>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
     </div>
-    <!--end content-wrapper-->
-    <footer>
-      <p class="note font-size-20 opacity-90">Coming Soon on <b>Android</b> and <b>iOS.</b></p>
-    </footer>
-</div>
-<!--end page-wrapper-->
+</nav>
 
-<!-- Modal About Us -->
-<div class="modal fade" id="modal-about-us" tabindex="-1" role="dialog" aria-labelledby="modal-about-us-label">
-    <div class="modal-dialog" role="document">
-        <div class="container">
-            <div class="modal-content">
-                <div class="modal-header" data-background-color="#61dfff">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h2 class="modal-title" id="modal-about-us-label">About Us</h2>
+<section class="hero" id="hero">
+    <div class="hero-glow"></div>
+    <div class="container">
+        <div class="hero-inner">
+            <div class="hero-tag"><span class="dot"></span> Available on Android</div>
+            <h1>Messages that<br>actually <span class="accent-salmon">matter</span></h1>
+            <p class="hero-desc">The first messaging app where any conversation can become a task. Chat with your team, turn messages into todos, assign them, and get things done.</p>
+            <div class="hero-actions">
+                <a href="#download" class="btn-cta"><i data-lucide="download" style="width:16px;height:16px"></i> Download Now</a>
+                <a href="#features" class="btn-outline"><i data-lucide="arrow-down" style="width:16px;height:16px"></i> Learn More</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section flow" id="problem">
+    <div class="container">
+        <div class="flow-grid">
+            <div class="flow-content reveal">
+                <span class="section-label"><i data-lucide="message-circle-warning"></i> The Problem</span>
+                <div class="lead">Important messages get buried. Action items get <span class="accent-maroon">forgotten</span>. Your chat app doesn't <span class="accent-orange">care</span>.</div>
+                <p>Every day, critical tasks hide inside endless conversations. You scroll, you search, you forget. Chattodo was built because your messages deserve to become accomplishments, not noise.</p>
+                <div class="flow-stats">
+                    <div><div class="flow-stat-num">73%</div><div class="flow-stat-label">of chat action items<br>go forgotten</div></div>
+                    <div><div class="flow-stat-num">2.5h</div><div class="flow-stat-label">wasted daily in<br>unproductive chats</div></div>
                 </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-md-5 col-sm-5">
-                            <section>
-                                <h3>Our Team</h3>
-                                <div class="row">
-                                    <div class="col-md-6 col-sm-6">
-                                        <div class="person">
-                                            <div class="image">
-                                                <div class="bg-transfer"><img src="assets/img/person-01.jpg" alt=""></div>
-                                            </div>
-                                            <h4>Jane Doe</h4>
-                                            <h5>Company CEO</h5>
-                                            <div class="social-icons">
-                                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                                <a href="#"><i class="fa fa-youtube"></i></a>
-                                            </div>
-                                        </div>
-                                        <!--end person-->
-                                    </div>
-                                    <!--end col-md-6-->
-                                    <div class="col-md-6 col-sm-6">
-                                        <div class="person">
-                                            <div class="image">
-                                                <div class="bg-transfer"><img src="assets/img/person-02.jpg" alt=""></div>
-                                            </div>
-                                            <h4>Peter Wood</h4>
-                                            <h5>Marketing Specialist</h5>
-                                            <div class="social-icons">
-                                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                                <a href="#"><i class="fa fa-youtube"></i></a>
-                                            </div>
-                                        </div>
-                                        <!--end person-->
-                                    </div>
-                                    <!--end col-md-6-->
-                                </div>
-                                <!--end row-->
-                            </section>
-                        </div>
-                        <!--end col-md-4-->
-                        <div class="col-md-7 col-sm-7">
-                            <section>
-                                <h3>Shortly About Us</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet sed tellus ut
-                                    condimentum. Aenean hendrerit, nisl sit amet molestie eleifend, magna augue pulvinar enim,
-                                    nec mattis quam eros non ex. Pellentesque luctus ex enim, a tempus lorem egestas quis.
-                                    Nunc et tincidunt dui. Cras in fermentum leo.
-                                </p>
-                                <p>
-                                    Mauris molestie pharetra tristique. Donec interdum odio erat, sed ullamcorper lectus
-                                    egestas non.  Quisque sollicitudin vestibulum leo eget malesuada. Pellentesque sem erat,
-                                    tempor a odio sed, tincidunt mollis purus. Cras suscipit ultrices cursus.
-                                </p>
-                            </section>
-                            <section>
-                                <h3>Our Skills</h3>
-                                <div class="skill">
-                                    <h4>Webdesign</h4>
-                                    <aside>80%</aside>
-                                    <figure class="bar">
-                                        <div class="bar-active width-80"></div>
-                                        <div class="bar-background"></div>
-                                    </figure>
-                                </div>
-                                <!--end skill-->
-                                <div class="skill">
-                                    <h4>Photography</h4>
-                                    <aside>100%</aside>
-                                    <figure class="bar">
-                                        <div class="bar-active width-100"></div>
-                                        <div class="bar-background"></div>
-                                    </figure>
-                                </div>
-                                <!--end skill-->
-                                <div class="skill">
-                                    <h4>Marketing</h4>
-                                    <aside>60%</aside>
-                                    <figure class="bar">
-                                        <div class="bar-active width-60"></div>
-                                        <div class="bar-background"></div>
-                                    </figure>
-                                </div>
-                                <!--end skill-->
-                            </section>
-                        </div>
-                        <!--end col-md-7-->
+            </div>
+            <div class="flow-visual reveal reveal-d2">
+                <div class="flow-card">
+                    <div class="fc-icon muted"><i data-lucide="message-circle"></i></div>
+                    <div class="fc-text"><h4>Regular Messaging</h4><p>"Can you send the report by EOD?"</p></div>
+                    <span class="fc-badge faded">Lost</span>
+                </div>
+                <div class="flow-arrow"><i data-lucide="arrow-down" style="width:20px;height:20px"></i></div>
+                <div class="flow-card">
+                    <div class="fc-icon active"><i data-lucide="circle-check-big"></i></div>
+                    <div class="fc-text"><h4>With Chattodo</h4><p>Task created, assigned, tracked</p></div>
+                    <span class="fc-badge tracked">Tracked</span>
+                </div>
+                <div style="height:12px"></div>
+                <div class="flow-card">
+                    <div class="fc-icon muted"><i data-lucide="message-circle"></i></div>
+                    <div class="fc-text"><h4>Regular Messaging</h4><p>"Meeting moved to 3PM Thursday"</p></div>
+                    <span class="fc-badge faded">Buried</span>
+                </div>
+                <div class="flow-arrow"><i data-lucide="arrow-down" style="width:20px;height:20px"></i></div>
+                <div class="flow-card">
+                    <div class="fc-icon active"><i data-lucide="circle-check-big"></i></div>
+                    <div class="fc-text"><h4>With Chattodo</h4><p>Task created, assigned, reminder set</p></div>
+                    <span class="fc-badge tracked">Actionable</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section features-section" id="features">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-label"><i data-lucide="sparkles"></i> Core Features</span>
+            <h2 class="section-title">Everything you need.<br><span class="accent-orange">Nothing you don't.</span></h2>
+            <p class="section-desc mx-auto">Built for people who value their time and want conversations that lead to results.</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature reveal">
+                <div class="f-icon ic-salmon"><i data-lucide="message-circle-plus"></i></div>
+                <h3>Message to Task</h3>
+                <p>Turn any message into a trackable task with a single tap. Text, images, audio, files &mdash; anything becomes actionable.</p>
+            </div>
+            <div class="feature reveal reveal-d1">
+                <div class="f-icon ic-orange"><i data-lucide="users"></i></div>
+                <h3>Assign &amp; Track</h3>
+                <p>Assign tasks to specific people. Track status from pending to completed. Everyone stays accountable.</p>
+            </div>
+            <div class="feature reveal reveal-d2">
+                <div class="f-icon ic-brown"><i data-lucide="layout-list"></i></div>
+                <h3>Dedicated Task View</h3>
+                <p>See all your tasks across every conversation in one place. Filter, sort, and group by origin.</p>
+            </div>
+            <div class="feature reveal reveal-d1">
+                <div class="f-icon ic-maroon"><i data-lucide="at-sign"></i></div>
+                <h3>Smart Mentions</h3>
+                <p>@mention anyone. A dedicated tab ensures you never miss when someone needs your attention.</p>
+            </div>
+            <div class="feature reveal reveal-d2">
+                <div class="f-icon ic-orange"><i data-lucide="search"></i></div>
+                <h3>Powerful Search</h3>
+                <p>Search across messages, tasks, and users simultaneously. Filter to find exactly what you need.</p>
+            </div>
+            <div class="feature reveal reveal-d3">
+                <div class="f-icon ic-salmon"><i data-lucide="user-plus"></i></div>
+                <h3>Groups &amp; Connections</h3>
+                <p>Create group chats, send connection requests, and build your circle with the people who matter most.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section steps-section" id="how-it-works">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-label"><i data-lucide="route"></i> How It Works</span>
+            <h2 class="section-title">From chat to done<br>in <span class="accent-orange">seconds</span></h2>
+            <p class="section-desc mx-auto">As simple as messaging &mdash; infinitely more productive.</p>
+        </div>
+        <div class="steps-row">
+            <div class="step-item reveal"><div class="step-num">1</div><h4>Chat Naturally</h4><p>Message your team like you already do. Personal or group.</p></div>
+            <div class="step-item reveal reveal-d1"><div class="step-num">2</div><h4>Mark as Todo</h4><p>See something important? One tap turns it into a task.</p></div>
+            <div class="step-item reveal reveal-d2"><div class="step-num">3</div><h4>Assign It</h4><p>Assign the task to yourself or anyone in the chat.</p></div>
+            <div class="step-item reveal reveal-d3"><div class="step-num">4</div><h4>Get It Done</h4><p>Complete tasks and feel accomplished every single day.</p></div>
+        </div>
+    </div>
+</section>
+<section class="section showcase" id="tasks">
+    <div class="container">
+        <div class="showcase-grid">
+            <div class="sc-content reveal">
+                <span class="section-label"><i data-lucide="check-circle"></i> Task Management</span>
+                <h2>All your tasks,<br><span class="accent-orange">one view</span></h2>
+                <p>No more switching apps. A dedicated task board pulls todos from every conversation so nothing slips.</p>
+                <ul class="check-list">
+                    <li><i data-lucide="check" style="width:16px;height:16px"></i> Filter by pending, done, or all</li>
+                    <li><i data-lucide="check" style="width:16px;height:16px"></i> Sort by date or group by chat</li>
+                    <li><i data-lucide="check" style="width:16px;height:16px"></i> Expand any task for full context</li>
+                    <li><i data-lucide="check" style="width:16px;height:16px"></i> Jump to the original message</li>
+                </ul>
+            </div>
+            <div class="sc-visual reveal reveal-d2">
+                <div class="ui-view">
+                    <div class="ui-bar">
+                        <h4>Tasks</h4>
+                        <div class="ui-tabs"><span class="ui-tab on">Pending</span><span class="ui-tab">Done</span><span class="ui-tab">All</span></div>
                     </div>
-                    <!--end row-->
-                </div>
-                <!--end modal-body-->
-            </div>
-            <!--end modal-content-->
-        </div>
-        <!--end container-->
-    </div>
-    <!--end modal-dialog-->
-</div>
-<!--end #modal-about-us-->
-
-<!-- Modal Our Works -->
-<div class="modal fade" id="modal-our-works" tabindex="-1" role="dialog" aria-labelledby="modal-our-works-label">
-    <div class="modal-dialog" role="document">
-        <div class="container">
-            <div class="modal-content">
-                <div class="modal-header" data-background-color="#8dff8b">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h2 class="modal-title" id="modal-our-works-label">Our Works</h2>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-md-4 col-sm-4">
-                            <a href="assets/img/1.jpg" class="work image-popup">
-                                <div class="description">
-                                    <h4>Paperworks</h4>
-                                    <h5>Product Design</h5>
-                                </div>
-                                <!--end description-->
-                                <div class="image">
-                                    <div class="bg-transfer"><img src="assets/img/1.jpg" alt=""></div>
-                                </div>
-                            </a>
-                            <!--end work-->
-                        </div>
-                        <!--end col-md-4-->
-                        <div class="col-md-4 col-sm-4">
-                            <a href="assets/img/2.jpg" class="work image-popup">
-                                <div class="description">
-                                    <h4>Landscape</h4>
-                                    <h5>Illustration</h5>
-                                </div>
-                                <!--end description-->
-                                <div class="image">
-                                    <div class="bg-transfer"><img src="assets/img/2.jpg" alt=""></div>
-                                </div>
-                            </a>
-                            <!--end work-->
-                        </div>
-                        <!--end col-md-4-->
-                        <div class="col-md-4 col-sm-4">
-                            <a href="assets/img/3.jpg" class="work image-popup">
-                                <div class="description">
-                                    <h4>Massa</h4>
-                                    <h5>Logo design</h5>
-                                </div>
-                                <!--end description-->
-                                <div class="image">
-                                    <div class="bg-transfer"><img src="assets/img/3.jpg" alt=""></div>
-                                </div>
-                            </a>
-                            <!--end work-->
-                        </div>
-                        <!--end col-md-4-->
-                        <div class="col-md-4 col-sm-4">
-                            <a href="assets/img/4.jpg" class="work image-popup">
-                                <div class="description">
-                                    <h4>11Street</h4>
-                                    <h5>Logo design</h5>
-                                </div>
-                                <!--end description-->
-                                <div class="image">
-                                    <div class="bg-transfer"><img src="assets/img/4.jpg" alt=""></div>
-                                </div>
-                            </a>
-                            <!--end work-->
-                        </div>
-                        <!--end col-md-4-->
-                        <div class="col-md-4 col-sm-4">
-                            <a href="assets/img/5.jpg" class="work image-popup">
-                                <div class="description">
-                                    <h4>App</h4>
-                                    <h5>Branding</h5>
-                                </div>
-                                <!--end description-->
-                                <div class="image">
-                                    <div class="bg-transfer"><img src="assets/img/5.jpg" alt=""></div>
-                                </div>
-                            </a>
-                            <!--end work-->
-                        </div>
-                        <!--end col-md-4-->
-                        <div class="col-md-4 col-sm-4">
-                            <a href="assets/img/6.jpg" class="work image-popup">
-                                <div class="description">
-                                    <h4>Moon</h4>
-                                    <h5>Photography</h5>
-                                </div>
-                                <!--end description-->
-                                <div class="image">
-                                    <div class="bg-transfer"><img src="assets/img/6.jpg" alt=""></div>
-                                </div>
-                            </a>
-                            <!--end work-->
-                        </div>
-                        <!--end col-md-4-->
+                    <div class="ui-row">
+                        <div class="ui-check"></div>
+                        <div class="ui-row-text"><h5>Update slides with new metrics</h5><div class="meta">Team Project &middot; Due Friday</div></div>
                     </div>
-                    <!--end row-->
-                </div>
-                <!--end modal-body-->
-            </div>
-            <!--end modal-content-->
-        </div>
-        <!--end container-->
-    </div>
-    <!--end modal-dialog-->
-</div>
-<!--end #modal-our-works-->
-
-<!-- Modal Services -->
-<div class="modal fade" id="modal-services" tabindex="-1" role="dialog" aria-labelledby="modal-services-label">
-    <div class="modal-dialog" role="document">
-        <div class="container">
-            <div class="modal-content">
-                <div class="modal-header" data-background-color="#ff6767">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h2 class="modal-title" id="modal-services-label">Services</h2>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-md-4 col-sm-4">
-                            <div class="box">
-                                <div class="icon">
-                                    <img src="assets/img/camera.png" alt="">
-                                </div>
-                                <h3>Photography</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet sed tellus ut condimentum</p>
-                            </div>
-                            <!--end box-->
-                        </div>
-                        <!--end col-md-4-->
-                        <div class="col-md-4 col-sm-4">
-                            <div class="box">
-                                <div class="icon">
-                                    <img src="assets/img/computer.png" alt="">
-                                </div>
-                                <h3>Webdesign</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet sed tellus ut condimentum</p>
-                            </div>
-                            <!--end box-->
-                        </div>
-                        <!--end col-md-4-->
-                        <div class="col-md-4 col-sm-4">
-                            <div class="box">
-                                <div class="icon">
-                                    <img src="assets/img/compose.png" alt="">
-                                </div>
-                                <h3>Copywriting</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet sed tellus ut condimentum</p>
-                            </div>
-                            <!--end box-->
-                        </div>
-                        <!--end col-md-4-->
-                        <div class="col-md-4 col-sm-4">
-                            <div class="box">
-                                <div class="icon">
-                                    <img src="assets/img/cloud.png" alt="">
-                                </div>
-                                <h3>Cloud Servers</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet sed tellus ut condimentum</p>
-                            </div>
-                            <!--end box-->
-                        </div>
-                        <!--end col-md-4-->
-                        <div class="col-md-4 col-sm-4">
-                            <div class="box">
-                                <div class="icon">
-                                    <img src="assets/img/mail.png" alt="">
-                                </div>
-                                <h3>Email Campaigns</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet sed tellus ut condimentum</p>
-                            </div>
-                            <!--end box-->
-                        </div>
-                        <!--end col-md-4-->
-                        <div class="col-md-4 col-sm-4">
-                            <div class="box">
-                                <div class="icon">
-                                    <img src="assets/img/magnifyingglass.png" alt="">
-                                </div>
-                                <h3>SEO Optimization</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet sed tellus ut condimentum</p>
-                            </div>
-                            <!--end box-->
-                        </div>
-                        <!--end col-md-4-->
+                    <div class="ui-row">
+                        <div class="ui-check"></div>
+                        <div class="ui-row-text"><h5>Review final draft before send-off</h5><div class="meta">Team Project &middot; Due Thursday</div></div>
+                    </div>
+                    <div class="ui-row">
+                        <div class="ui-check"></div>
+                        <div class="ui-row-text"><h5>Send invoice to client</h5><div class="meta">Sarah &middot; Today</div></div>
+                    </div>
+                    <div class="ui-row">
+                        <div class="ui-check checked"><i data-lucide="check"></i></div>
+                        <div class="ui-row-text"><h5 class="done-line">Design assets uploaded</h5><div class="meta">Team Project &middot; 2h ago</div></div>
                     </div>
                 </div>
-                <!--end modal-body-->
             </div>
-            <!--end modal-content-->
         </div>
-        <!--end container-->
     </div>
-    <!--end modal-dialog-->
-</div>
-<!--end #modal-services-->
+</section>
 
-<!-- Modal Contact Us -->
-<div class="modal fade" id="modal-contact-us" tabindex="-1" role="dialog" aria-labelledby="modal-contact-us-label">
-    <div class="modal-dialog" role="document">
-        <div class="container">
-            <div class="modal-content">
-                <div class="modal-header" data-background-color="#ffe858">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h2 class="modal-title" id="modal-contact-us-label">Services</h2>
-                </div>
-                <div id="map"></div>
-                <div class="modal-body">
-                    <section>
-                        <div class="row">
-                            <div class="col-md-3 col-sm-3">
-                                <h3>Address</h3>
-                                <address>
-                                    4758 Nancy Street<br>
-                                    +1 919-571-2528<br>
-                                    <a href="mailto:hello@example.com">hello@example.com</a>
-                                </address>
-                            </div>
-                            <!--end col-md-3-->
-                            <div class="col-md-3 col-sm-3">
-                                <h3>Social</h3>
-                                <figure><a href="" class="icon"><i class="fa fa-facebook"></i>Facebook</a></figure>
-                                <figure><a href="" class="icon"><i class="fa fa-twitter"></i>Twitter</a></figure>
-                                <figure><a href="" class="icon"><i class="fa fa-youtube"></i>Youtube</a></figure>
-                                <figure><a href="" class="icon"><i class="fa fa-pinterest"></i>Pinterest</a></figure>
-                            </div>
-                            <!--end col-md-3-->
-                            <div class="col-md-6 col-sm-6">
-                                <h3>Contact Form</h3>
-                                <form id="form-contact" method="post" class="form clearfix inputs-underline">
-                                    <div class="row">
-                                        <div class="col-md-6 col-sm-6">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" id="form-contact-name" name="name" placeholder="Your Name" required>
-                                            </div>
-                                            <!--end form-group -->
-                                        </div>
-                                        <!--end col-md-6 col-sm-6 -->
-                                        <div class="col-md-6 col-sm-6">
-                                            <div class="form-group">
-                                                <input type="email" class="form-control" id="form-contact-email" name="email" placeholder="Your Email" required>
-                                            </div>
-                                            <!--end form-group -->
-                                        </div>
-                                        <!--end col-md-6 col-sm-6 -->
-                                    </div>
-                                    <!--end row -->
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <textarea class="form-control" id="form-contact-message" rows="5" name="message" placeholder="Your Message" required></textarea>
-                                            </div>
-                                            <!--end form-group -->
-                                        </div>
-                                        <!--end col-md-12 -->
-                                    </div>
-                                    <!--end row -->
-                                    <div class="form-group clearfix">
-                                        <button type="submit" class="btn pull-right btn-default btn-framed btn-rounded" id="form-contact-submit">Send a Message</button>
-                                    </div>
-                                    <!--end form-group -->
-                                    <div class="form-contact-status"></div>
-                                </form>
-                                <!--end form-contact -->
-                            </div>
-                            <!--end col-md-6-->
-                        </div>
-                    </section>
-                </div>
-                <!--end modal-body-->
+<section class="section showcase">
+    <div class="container">
+        <div class="showcase-grid flip">
+            <div class="sc-content reveal">
+                <span class="section-label"><i data-lucide="inbox"></i> Smart Inbox</span>
+                <h2>Every conversation,<br><span class="accent-orange">purposeful</span></h2>
+                <p>Your inbox is your inner circle &mdash; the people and groups that matter most. But that doesn't mean it's limited. Connect with anyone, create groups freely, and grow your circle as big as you want. Every conversation just happens to be more intentional here.</p>
+                <ul class="check-list">
+                    <li><i data-lucide="check" style="width:16px;height:16px"></i> Personal and group chats</li>
+                    <li><i data-lucide="check" style="width:16px;height:16px"></i> Pending tasks count per chat</li>
+                    <li><i data-lucide="check" style="width:16px;height:16px"></i> Pin, mute, and quick actions</li>
+                    <li><i data-lucide="check" style="width:16px;height:16px"></i> Real-time read receipts</li>
+                </ul>
             </div>
-            <!--end modal-content-->
+            <div class="sc-visual reveal reveal-d2">
+                <div class="ui-view">
+                    <div class="ui-bar"><h4>Inbox</h4><div></div></div>
+                    <div class="ui-row">
+                        <div class="ui-avatar" style="background:#e78973">TP</div>
+                        <div class="ui-inbox-info"><div class="name">Team Project</div><div class="preview">Amazing progress everyone!</div></div>
+                        <div class="ui-inbox-meta"><span>2m</span><span class="ui-badge">3</span><span class="ui-tasks-tag">2 tasks</span></div>
+                    </div>
+                    <div class="ui-row">
+                        <div class="ui-avatar" style="background:#e8a43d">SJ</div>
+                        <div class="ui-inbox-info"><div class="name">Sarah Johnson</div><div class="preview">Can you send the invoice today?</div></div>
+                        <div class="ui-inbox-meta"><span>15m</span><span class="ui-badge">1</span><span class="ui-tasks-tag">1 task</span></div>
+                    </div>
+                    <div class="ui-row">
+                        <div class="ui-avatar" style="background:#ab4641">DT</div>
+                        <div class="ui-inbox-info"><div class="name">Design Team</div><div class="preview">New mockups ready for review</div></div>
+                        <div class="ui-inbox-meta"><span>1h</span></div>
+                    </div>
+                    <div class="ui-row">
+                        <div class="ui-avatar" style="background:#482511">MK</div>
+                        <div class="ui-inbox-info"><div class="name">Mike K.</div><div class="preview">Thanks! See you tomorrow</div></div>
+                        <div class="ui-inbox-meta"><span>3h</span></div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!--end container-->
     </div>
-    <!--end modal-dialog-->
-</div>
-<!--end #modal-contact-us-->
+</section>
 
-<script  src="assets/js/jquery-2.2.1.min.js"></script>
-<script  src="http://maps.google.com/maps/api/js"></script>
-<script  src="assets/bootstrap/js/bootstrap.min.js"></script>
-<script  src="assets/js/jquery.validate.min.js"></script>
-<script  src="assets/js/jquery.magnific-popup.min.js"></script>
-<script  src="assets/js/sketch.min.js"></script>
-<script  src="assets/js/custom.js"></script>
+<section class="section" id="more">
+    <div class="container">
+        <div class="section-header reveal" style="text-align:center;margin-bottom:48px">
+            <span class="section-label"><i data-lucide="layers"></i> And More</span>
+            <h2 class="section-title">A complete experience,<br><span class="accent-orange">redefined</span></h2>
+            <p class="section-desc mx-auto">Everything you expect from a modern messenger, plus the productivity layer that makes it unique.</p>
+        </div>
+        <div class="more-grid">
+            <div class="more-item reveal"><div class="mi-icon"><i data-lucide="image"></i></div><h4>Rich Media</h4><p>Images, videos, GIFs, files, and documents</p></div>
+            <div class="more-item reveal reveal-d1"><div class="mi-icon"><i data-lucide="mic"></i></div><h4>Voice Messages</h4><p>Record, pause, and send with waveform preview</p></div>
+            <div class="more-item reveal reveal-d2"><div class="mi-icon"><i data-lucide="smile"></i></div><h4>Reactions</h4><p>React to any message with emojis instantly</p></div>
+            <div class="more-item reveal reveal-d3"><div class="mi-icon"><i data-lucide="map-pin"></i></div><h4>Location</h4><p>Share your location in any conversation</p></div>
+            <div class="more-item reveal"><div class="mi-icon"><i data-lucide="user-circle"></i></div><h4>Rich Profiles</h4><p>Bio, links, avatar, and privacy controls</p></div>
+            <div class="more-item reveal reveal-d1"><div class="mi-icon"><i data-lucide="bell"></i></div><h4>Notifications</h4><p>Smart alerts so you never miss what matters</p></div>
+            <div class="more-item reveal reveal-d2"><div class="mi-icon"><i data-lucide="shield"></i></div><h4>Secure by Design</h4><p>Built on Firebase with authentication and access controls</p></div>
+            <div class="more-item reveal reveal-d3"><div class="mi-icon"><i data-lucide="zap"></i></div><h4>Real-time Sync</h4><p>Instant delivery with read receipts</p></div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="download">
+    <div class="container">
+        <div class="cta reveal">
+            <span class="section-label" style="margin-bottom:20px"><i data-lucide="rocket"></i> Get Started</span>
+            <h2>Ready to make your<br>messages <span class="accent-orange">matter</span>?</h2>
+            <p>Join people who turn conversations into accomplishments. Download Chattodo today.</p>
+            <div class="cta-actions">
+                <a href="#" class="btn-cta" style="padding:14px 36px;font-size:15px"><i data-lucide="download" style="width:18px;height:18px"></i> Download Now</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <img src="assets/img/logo.webp" alt="Chattodo">
+                <p>The messaging experience that truly matters. Turn conversations into action.</p>
+            </div>
+            <div class="footer-cols">
+                <div class="footer-col"><h5>Product</h5><ul><li><a href="#features">Features</a></li><li><a href="#how-it-works">How It Works</a></li><li><a href="#tasks">Tasks</a></li><li><a href="#download">Download</a></li></ul></div>
+                <div class="footer-col"><h5>Legal</h5><ul><li><a href="privacy-terms.html">Privacy Policy</a></li><li><a href="privacy-terms.html#terms">Terms of Service</a></li></ul></div>
+            </div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2026 Chattodo. All rights reserved.</p></div>
+    </div>
+</footer>
 
 <script>
-
-    //  Map
-
-    var latitude = 34.038405;
-    var longitude = -117.946944;
-    var markerImage = "assets/img/map-marker.png";
-    var mapTheme = "light";
-    var mapElement = "map";
-
-    $(".modal").on("shown.bs.modal", function (e) {
-        google.maps.event.addDomListener(window, 'load', simpleMap(latitude, longitude, markerImage, mapTheme, mapElement));
-    });
-
-    // Background
-
-    var COLOURS = [ '#61dfff', '#A7EBCA', '#FFFFFF', '#ff6767', '#61dfff' ];
-    var radius = 0;
-    var randomColor = 0;
-
-    Sketch.create({
-
-        container: document.getElementById( 'background-content' ),
-        autoclear: false,
-        retina: 'auto',
-
-        update: function() {
-            radius = 2 + abs( sin( this.millis * 0.003 ) * 50 );
-        },
-
-        click: function() {
-            randomColor = parseInt( 0 + (COLOURS.length - 0) * Math.random(), 10 ) ;
-        },
-
-        touchmove: function() {
-
-            for ( var i = this.touches.length - 1, touch; i >= 0; i-- ) {
-
-                touch = this.touches[i];
-
-                this.lineCap = 'round';
-                this.lineJoin = 'round';
-                this.fillStyle = this.strokeStyle = COLOURS[ randomColor % COLOURS.length ];
-                this.lineWidth = radius;
-
-                this.beginPath();
-                this.moveTo( touch.ox, touch.oy );
-                this.lineTo( touch.x, touch.y );
-                this.stroke();
-            }
-        }
-    });
-
-
+(function(){
+    lucide.createIcons();
+    var nb=document.getElementById('navbar');
+    window.addEventListener('scroll',function(){nb.classList.toggle('scrolled',window.pageYOffset>40)});
+    var mt=document.getElementById('mobileToggle'),nl=document.getElementById('navLinks');
+    mt.addEventListener('click',function(){nl.classList.toggle('open')});
+    var lnks=nl.querySelectorAll('a');for(var i=0;i<lnks.length;i++){lnks[i].addEventListener('click',function(){nl.classList.remove('open')})}
+    var els=document.querySelectorAll('.reveal');
+    var obs=new IntersectionObserver(function(e){for(var j=0;j<e.length;j++){if(e[j].isIntersecting){e[j].target.classList.add('visible');obs.unobserve(e[j].target)}}},{threshold:0.1,rootMargin:'0px 0px -30px 0px'});
+    for(var k=0;k<els.length;k++){obs.observe(els[k])}
+    var anch=document.querySelectorAll('a[href^="#"]');
+    for(var m=0;m<anch.length;m++){anch[m].addEventListener('click',function(ev){ev.preventDefault();var t=document.querySelector(this.getAttribute('href'));if(t){window.scrollTo({top:t.getBoundingClientRect().top+window.pageYOffset-nb.offsetHeight,behavior:'smooth'})}})}
+})();
 </script>
-
 </body>
+</html>
