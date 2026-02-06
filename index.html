@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chattodo - Messages That Actually Matter</title>
-    <meta name="description" content="The world's first messaging app where every conversation becomes action. Chat, create tasks, and feel accomplished.">
-    <meta property="og:title" content="Chattodo - Messages That Matter">
-    <meta property="og:description" content="Turn conversations into action. The messaging app built for people who get things done.">
+    <title>Chattodo - Noise Solved</title>
+    <meta name="description" content="Chattodo is the messaging app for small teams. Chat, turn messages into tasks, and keep your circle tight. Noise solved.">
+    <meta property="og:title" content="Chattodo - Noise Solved">
+    <meta property="og:description" content="What if just chatting exactly meant just working? Chattodo is built for builders.">
     <link rel="icon" type="image/png" href="assets/img/icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,15 +16,16 @@
 </head>
 <body>
 
+<div class="scroll-progress" id="scrollProgress"></div>
+
 <nav class="navbar" id="navbar">
     <div class="container">
         <a href="#" class="nav-logo"><img src="assets/img/logo.webp" alt="Chattodo"></a>
         <ul class="nav-links" id="navLinks">
+            <li><a href="#the-idea">Signal</a></li>
             <li><a href="#features">Features</a></li>
-            <li><a href="#how-it-works">How It Works</a></li>
-            <li><a href="#tasks">Tasks</a></li>
-            <li><a href="#more">More</a></li>
-            <li><a href="#download" class="btn-cta">Get the App</a></li>
+            <li><a href="#philosophy">Philosophy</a></li>
+            <li><a href="#download" class="btn-cta"><i data-lucide="download" style="width:14px;height:14px"></i> Download</a></li>
         </ul>
         <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
             <span></span><span></span><span></span>
@@ -32,134 +33,118 @@
     </div>
 </nav>
 
+<!-- HERO -->
 <section class="hero" id="hero">
     <div class="hero-glow"></div>
     <div class="container">
-        <div class="hero-inner">
+        <div class="hero-inner" style="max-width:720px">
             <div class="hero-tag"><span class="dot"></span> Available on Android</div>
-            <h1>Messages that<br>actually <span class="accent-salmon">matter</span></h1>
-            <p class="hero-desc">The first messaging app where any conversation can become a task. Chat with your team, turn messages into todos, assign them, and get things done.</p>
+            <h1>Noise <span class="accent-salmon">solved.</span></h1>
+            <div class="hero-features">
+                <span class="hero-feat">Chat.</span>
+                <span class="hero-feat">Todo.</span>
+                <span class="hero-feat">Team.</span>
+            </div>
+            <p class="hero-sub">Three features. That's it. For focused teams who get things done.</p>
+            <div class="pillars" style="animation:fadeUp .6s ease 1.2s forwards;opacity:0">
+                <div class="pillar"><h3><i data-lucide="message-circle"></i> Chat</h3><p>Real-time messaging.</p></div>
+                <div class="pillar"><h3><i data-lucide="check-circle"></i> Todo</h3><p>Double-tap to task.</p></div>
+                <div class="pillar"><h3><i data-lucide="users"></i> Team</h3><p>Your 5 + you.</p></div>
+            </div>
+            <div class="signal-strip" style="animation:fadeUp .6s ease 1.4s forwards;opacity:0">
+                <p style="opacity:0.5">Every extra feature is a decision point.</p>
+                <p style="opacity:0.7;margin-top:4px">Fewer decisions, less noise.</p>
+                <p style="margin-top:4px"><strong>We are anti-bloat by design.</strong></p>
+            </div>
             <div class="hero-actions">
-                <a href="#download" class="btn-cta"><i data-lucide="download" style="width:16px;height:16px"></i> Download Now</a>
-                <a href="#features" class="btn-outline"><i data-lucide="arrow-down" style="width:16px;height:16px"></i> Learn More</a>
+                <a href="#download" class="btn-cta"><i data-lucide="download" style="width:16px;height:16px"></i> Download Chattodo</a>
+                <a href="#the-idea" class="btn-outline"><i data-lucide="arrow-down" style="width:16px;height:16px"></i> Learn More</a>
             </div>
         </div>
     </div>
 </section>
 
-<section class="section flow" id="problem">
-    <div class="container">
-        <div class="flow-grid">
-            <div class="flow-content reveal">
-                <span class="section-label"><i data-lucide="message-circle-warning"></i> The Problem</span>
-                <div class="lead">Important messages get buried. Action items get <span class="accent-maroon">forgotten</span>. Your chat app doesn't <span class="accent-orange">care</span>.</div>
-                <p>Every day, critical tasks hide inside endless conversations. You scroll, you search, you forget. Chattodo was built because your messages deserve to become accomplishments, not noise.</p>
-                <div class="flow-stats">
-                    <div><div class="flow-stat-num">73%</div><div class="flow-stat-label">of chat action items<br>go forgotten</div></div>
-                    <div><div class="flow-stat-num">2.5h</div><div class="flow-stat-label">wasted daily in<br>unproductive chats</div></div>
-                </div>
+<!-- THE IDEA -->
+<section class="section" id="the-idea" style="background:var(--cream)">
+    <div class="container" style="max-width:720px;text-align:center">
+        <div class="reveal">
+            <span class="section-label"><i data-lucide="lightbulb"></i> Why Chattodo</span>
+            <h2 class="section-title" style="margin-bottom:8px">What if 'just chatting'<br>exactly meant <span class="accent-orange">'just working'</span>?</h2>
+        </div>
+        <div class="idea-row reveal-scale reveal-d1">
+            <div class="idea-block">
+                <div class="idea-visual"><div class="seats"><div class="seat"></div><div class="seat"></div><div class="seat"></div><div class="seat"></div><div class="seat"></div><div class="seat"></div></div></div>
+                <h4>5 + you. 1 car.</h4>
+                <p>We encourage small teams.</p>
             </div>
-            <div class="flow-visual reveal reveal-d2">
-                <div class="flow-card">
-                    <div class="fc-icon muted"><i data-lucide="message-circle"></i></div>
-                    <div class="fc-text"><h4>Regular Messaging</h4><p>"Can you send the report by EOD?"</p></div>
-                    <span class="fc-badge faded">Lost</span>
-                </div>
-                <div class="flow-arrow"><i data-lucide="arrow-down" style="width:20px;height:20px"></i></div>
-                <div class="flow-card">
-                    <div class="fc-icon active"><i data-lucide="circle-check-big"></i></div>
-                    <div class="fc-text"><h4>With Chattodo</h4><p>Task created, assigned, tracked</p></div>
-                    <span class="fc-badge tracked">Tracked</span>
-                </div>
-                <div style="height:12px"></div>
-                <div class="flow-card">
-                    <div class="fc-icon muted"><i data-lucide="message-circle"></i></div>
-                    <div class="fc-text"><h4>Regular Messaging</h4><p>"Meeting moved to 3PM Thursday"</p></div>
-                    <span class="fc-badge faded">Buried</span>
-                </div>
-                <div class="flow-arrow"><i data-lucide="arrow-down" style="width:20px;height:20px"></i></div>
-                <div class="flow-card">
-                    <div class="fc-icon active"><i data-lucide="circle-check-big"></i></div>
-                    <div class="fc-text"><h4>With Chattodo</h4><p>Task created, assigned, reminder set</p></div>
-                    <span class="fc-badge tracked">Actionable</span>
-                </div>
+            <div class="idea-block">
+                <div class="idea-visual"><div class="tap-icon"><i data-lucide="mouse-pointer-click"></i></div></div>
+                <h4>Double-tap. Done.</h4>
+                <p>Message becomes a task.</p>
+            </div>
+            <div class="idea-block">
+                <div class="idea-visual"><div class="chat-float"><i data-lucide="messages-square"></i></div></div>
+                <h4>You already know how.</h4>
+                <p>It's just chatting.</p>
             </div>
         </div>
+        <p class="section-desc mx-auto reveal reveal-d2" style="margin-top:8px">Not everyone needs a seat in your car. We encourage keeping your circle tight &mdash; but how you operate is up to you.</p>
     </div>
 </section>
-
+<!-- FEATURES -->
 <section class="section features-section" id="features">
     <div class="container">
         <div class="section-header reveal">
-            <span class="section-label"><i data-lucide="sparkles"></i> Core Features</span>
+            <span class="section-label"><i data-lucide="sparkles"></i> Three Core Features</span>
             <h2 class="section-title">Everything you need.<br><span class="accent-orange">Nothing you don't.</span></h2>
-            <p class="section-desc mx-auto">Built for people who value their time and want conversations that lead to results.</p>
         </div>
-        <div class="features-grid">
+        <div class="features-grid" style="grid-template-columns:repeat(3,1fr)">
             <div class="feature reveal">
-                <div class="f-icon ic-salmon"><i data-lucide="message-circle-plus"></i></div>
-                <h3>Message to Task</h3>
-                <p>Turn any message into a trackable task with a single tap. Text, images, audio, files &mdash; anything becomes actionable.</p>
+                <div class="f-icon ic-salmon"><i data-lucide="message-circle"></i></div>
+                <h3>Chat</h3>
+                <p>Real-time messaging with voice, images, files, reactions, and mentions. Everything you need, nothing more.</p>
             </div>
             <div class="feature reveal reveal-d1">
-                <div class="f-icon ic-orange"><i data-lucide="users"></i></div>
-                <h3>Assign &amp; Track</h3>
-                <p>Assign tasks to specific people. Track status from pending to completed. Everyone stays accountable.</p>
+                <div class="f-icon ic-orange"><i data-lucide="check-circle"></i></div>
+                <h3>Todo</h3>
+                <p>Double-tap any message to turn it into a task. Assign it. Track it. Complete it. Accountability built in.</p>
             </div>
             <div class="feature reveal reveal-d2">
-                <div class="f-icon ic-brown"><i data-lucide="layout-list"></i></div>
-                <h3>Dedicated Task View</h3>
-                <p>See all your tasks across every conversation in one place. Filter, sort, and group by origin.</p>
-            </div>
-            <div class="feature reveal reveal-d1">
-                <div class="f-icon ic-maroon"><i data-lucide="at-sign"></i></div>
-                <h3>Smart Mentions</h3>
-                <p>@mention anyone. A dedicated tab ensures you never miss when someone needs your attention.</p>
-            </div>
-            <div class="feature reveal reveal-d2">
-                <div class="f-icon ic-orange"><i data-lucide="search"></i></div>
-                <h3>Powerful Search</h3>
-                <p>Search across messages, tasks, and users simultaneously. Filter to find exactly what you need.</p>
-            </div>
-            <div class="feature reveal reveal-d3">
-                <div class="f-icon ic-salmon"><i data-lucide="user-plus"></i></div>
-                <h3>Groups &amp; Connections</h3>
-                <p>Create group chats, send connection requests, and build your circle with the people who matter most.</p>
+                <div class="f-icon ic-brown"><i data-lucide="users"></i></div>
+                <h3>Team</h3>
+                <p>Connect with intention. Create groups. Keep your circle tight and your conversations meaningful.</p>
             </div>
         </div>
     </div>
 </section>
 
+<!-- HOW IT WORKS -->
 <section class="section steps-section" id="how-it-works">
     <div class="container">
-        <div class="section-header reveal">
+        <div class="section-header reveal" style="text-align:center;margin-bottom:36px">
             <span class="section-label"><i data-lucide="route"></i> How It Works</span>
-            <h2 class="section-title">From chat to done<br>in <span class="accent-orange">seconds</span></h2>
-            <p class="section-desc mx-auto">As simple as messaging &mdash; infinitely more productive.</p>
+            <h2 class="section-title">1 action. <span class="accent-orange">0 configuration.</span></h2>
+            <p class="section-desc mx-auto">You already know chatting. That's the whole learning curve.</p>
         </div>
         <div class="steps-row">
-            <div class="step-item reveal"><div class="step-num">1</div><h4>Chat Naturally</h4><p>Message your team like you already do. Personal or group.</p></div>
-            <div class="step-item reveal reveal-d1"><div class="step-num">2</div><h4>Mark as Todo</h4><p>See something important? One tap turns it into a task.</p></div>
-            <div class="step-item reveal reveal-d2"><div class="step-num">3</div><h4>Assign It</h4><p>Assign the task to yourself or anyone in the chat.</p></div>
-            <div class="step-item reveal reveal-d3"><div class="step-num">4</div><h4>Get It Done</h4><p>Complete tasks and feel accomplished every single day.</p></div>
+            <div class="step-item reveal"><div class="step-num">1</div><h4>Chat</h4><p>Message your team. Just start typing.</p></div>
+            <div class="step-item reveal reveal-d1"><div class="step-num">2</div><h4>Double-Tap</h4><p>See something actionable? It's now a task.</p></div>
+            <div class="step-item reveal reveal-d2"><div class="step-num">3</div><h4>Assign</h4><p>Give it to anyone in the conversation.</p></div>
+            <div class="step-item reveal reveal-d3"><div class="step-num">4</div><h4>Done</h4><p>Complete it. Feel accomplished. Daily.</p></div>
         </div>
     </div>
 </section>
+
+<!-- TASK VIEW -->
 <section class="section showcase" id="tasks">
     <div class="container">
         <div class="showcase-grid">
-            <div class="sc-content reveal">
-                <span class="section-label"><i data-lucide="check-circle"></i> Task Management</span>
+            <div class="sc-content reveal-left">
+                <span class="section-label"><i data-lucide="check-circle"></i> Task View</span>
                 <h2>All your tasks,<br><span class="accent-orange">one view</span></h2>
-                <p>No more switching apps. A dedicated task board pulls todos from every conversation so nothing slips.</p>
-                <ul class="check-list">
-                    <li><i data-lucide="check" style="width:16px;height:16px"></i> Filter by pending, done, or all</li>
-                    <li><i data-lucide="check" style="width:16px;height:16px"></i> Sort by date or group by chat</li>
-                    <li><i data-lucide="check" style="width:16px;height:16px"></i> Expand any task for full context</li>
-                    <li><i data-lucide="check" style="width:16px;height:16px"></i> Jump to the original message</li>
-                </ul>
+                <p>A dedicated task board pulls todos from every conversation. Filter, sort, expand, and jump to the original message.</p>
             </div>
-            <div class="sc-visual reveal reveal-d2">
+            <div class="sc-visual reveal-right reveal-d2">
                 <div class="ui-view">
                     <div class="ui-bar">
                         <h4>Tasks</h4>
@@ -171,11 +156,11 @@
                     </div>
                     <div class="ui-row">
                         <div class="ui-check"></div>
-                        <div class="ui-row-text"><h5>Review final draft before send-off</h5><div class="meta">Team Project &middot; Due Thursday</div></div>
+                        <div class="ui-row-text"><h5>Review final draft</h5><div class="meta">Team Project &middot; Due Thursday</div></div>
                     </div>
                     <div class="ui-row">
                         <div class="ui-check"></div>
-                        <div class="ui-row-text"><h5>Send invoice to client</h5><div class="meta">Sarah &middot; Today</div></div>
+                        <div class="ui-row-text"><h5>Send invoice to client</h5><div class="meta">Priya &middot; Today</div></div>
                     </div>
                     <div class="ui-row">
                         <div class="ui-check checked"><i data-lucide="check"></i></div>
@@ -187,42 +172,35 @@
     </div>
 </section>
 
-<section class="section showcase">
+<!-- PHILOSOPHY -->
+<section class="section" id="philosophy" style="background:var(--cream)">
     <div class="container">
-        <div class="showcase-grid flip">
+        <div class="showcase-grid">
             <div class="sc-content reveal">
-                <span class="section-label"><i data-lucide="inbox"></i> Smart Inbox</span>
-                <h2>Every conversation,<br><span class="accent-orange">purposeful</span></h2>
-                <p>Your inbox is your inner circle &mdash; the people and groups that matter most. But that doesn't mean it's limited. Connect with anyone, create groups freely, and grow your circle as big as you want. Every conversation just happens to be more intentional here.</p>
-                <ul class="check-list">
-                    <li><i data-lucide="check" style="width:16px;height:16px"></i> Personal and group chats</li>
-                    <li><i data-lucide="check" style="width:16px;height:16px"></i> Pending tasks count per chat</li>
-                    <li><i data-lucide="check" style="width:16px;height:16px"></i> Pin, mute, and quick actions</li>
-                    <li><i data-lucide="check" style="width:16px;height:16px"></i> Real-time read receipts</li>
+                <span class="section-label"><i data-lucide="heart"></i> Why We Made This</span>
+                <h2>We needed this<br><span class="accent-orange">ourselves</span></h2>
+                <p>We wanted a minimalistic space for our remote team. No AI noise. No feature bloat. No bots. Just humans getting things done together. So we built it. Now we're sharing it.</p>
+                <ul class="check-list" style="margin-top:20px">
+                    <li><i data-lucide="check" style="width:16px;height:16px"></i> Your data is your property alone</li>
+                    <li><i data-lucide="check" style="width:16px;height:16px"></i> No machine learning on your conversations</li>
+                    <li><i data-lucide="check" style="width:16px;height:16px"></i> Anti-bloat. For humans of clarity.</li>
                 </ul>
             </div>
             <div class="sc-visual reveal reveal-d2">
-                <div class="ui-view">
-                    <div class="ui-bar"><h4>Inbox</h4><div></div></div>
-                    <div class="ui-row">
-                        <div class="ui-avatar" style="background:#e78973">TP</div>
-                        <div class="ui-inbox-info"><div class="name">Team Project</div><div class="preview">Amazing progress everyone!</div></div>
-                        <div class="ui-inbox-meta"><span>2m</span><span class="ui-badge">3</span><span class="ui-tasks-tag">2 tasks</span></div>
+                <div class="chat-thread">
+                    <div class="bubble-wrap bubble-slide">
+                        <div class="bubble-avatar" style="background:var(--brown)">RK</div>
+                        <div class="bubble" style="background:var(--bg)">
+                            <div class="b-name" style="color:var(--brown)">Rohan</div>
+                            <p>Transparency and accountability &mdash; that's what we expect from our tools, and what our tools should expect from us.</p>
+                        </div>
                     </div>
-                    <div class="ui-row">
-                        <div class="ui-avatar" style="background:#e8a43d">SJ</div>
-                        <div class="ui-inbox-info"><div class="name">Sarah Johnson</div><div class="preview">Can you send the invoice today?</div></div>
-                        <div class="ui-inbox-meta"><span>15m</span><span class="ui-badge">1</span><span class="ui-tasks-tag">1 task</span></div>
-                    </div>
-                    <div class="ui-row">
-                        <div class="ui-avatar" style="background:#ab4641">DT</div>
-                        <div class="ui-inbox-info"><div class="name">Design Team</div><div class="preview">New mockups ready for review</div></div>
-                        <div class="ui-inbox-meta"><span>1h</span></div>
-                    </div>
-                    <div class="ui-row">
-                        <div class="ui-avatar" style="background:#482511">MK</div>
-                        <div class="ui-inbox-info"><div class="name">Mike K.</div><div class="preview">Thanks! See you tomorrow</div></div>
-                        <div class="ui-inbox-meta"><span>3h</span></div>
+                    <div class="bubble-wrap bubble-slide reveal-d1">
+                        <div class="bubble-avatar" style="background:var(--maroon)">CT</div>
+                        <div class="bubble" style="background:var(--bg)">
+                            <div class="b-name" style="color:var(--maroon)">Chattodo</div>
+                            <p>In the world of AI, we offer a productive experience <strong>without the noise</strong>. We are for humans of clarity.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -230,48 +208,82 @@
     </div>
 </section>
 
-<section class="section" id="more">
-    <div class="container">
-        <div class="section-header reveal" style="text-align:center;margin-bottom:48px">
-            <span class="section-label"><i data-lucide="layers"></i> And More</span>
-            <h2 class="section-title">A complete experience,<br><span class="accent-orange">redefined</span></h2>
-            <p class="section-desc mx-auto">Everything you expect from a modern messenger, plus the productivity layer that makes it unique.</p>
-        </div>
-        <div class="more-grid">
-            <div class="more-item reveal"><div class="mi-icon"><i data-lucide="image"></i></div><h4>Rich Media</h4><p>Images, videos, GIFs, files, and documents</p></div>
-            <div class="more-item reveal reveal-d1"><div class="mi-icon"><i data-lucide="mic"></i></div><h4>Voice Messages</h4><p>Record, pause, and send with waveform preview</p></div>
-            <div class="more-item reveal reveal-d2"><div class="mi-icon"><i data-lucide="smile"></i></div><h4>Reactions</h4><p>React to any message with emojis instantly</p></div>
-            <div class="more-item reveal reveal-d3"><div class="mi-icon"><i data-lucide="map-pin"></i></div><h4>Location</h4><p>Share your location in any conversation</p></div>
-            <div class="more-item reveal"><div class="mi-icon"><i data-lucide="user-circle"></i></div><h4>Rich Profiles</h4><p>Bio, links, avatar, and privacy controls</p></div>
-            <div class="more-item reveal reveal-d1"><div class="mi-icon"><i data-lucide="bell"></i></div><h4>Notifications</h4><p>Smart alerts so you never miss what matters</p></div>
-            <div class="more-item reveal reveal-d2"><div class="mi-icon"><i data-lucide="shield"></i></div><h4>Secure by Design</h4><p>Built on Firebase with authentication and access controls</p></div>
-            <div class="more-item reveal reveal-d3"><div class="mi-icon"><i data-lucide="zap"></i></div><h4>Real-time Sync</h4><p>Instant delivery with read receipts</p></div>
-        </div>
-    </div>
-</section>
-
+<!-- FINAL: The sum-up + Download CTA -->
 <section class="section" id="download">
     <div class="container">
-        <div class="cta reveal">
-            <span class="section-label" style="margin-bottom:20px"><i data-lucide="rocket"></i> Get Started</span>
-            <h2>Ready to make your<br>messages <span class="accent-orange">matter</span>?</h2>
-            <p>Join people who turn conversations into accomplishments. Download Chattodo today.</p>
-            <div class="cta-actions">
-                <a href="#" class="btn-cta" style="padding:14px 36px;font-size:15px"><i data-lucide="download" style="width:18px;height:18px"></i> Download Now</a>
+        <div class="chat-thread centered">
+            <div class="bubble-wrap bubble-slide">
+                <div class="bubble-avatar" style="background:var(--orange)">VK</div>
+                <div class="bubble">
+                    <div class="b-name">Vikram</div>
+                    <p>Only human to human chats. Only 6 people. Only 3 core features. Full stop. <strong>Noise killed indeed.</strong></p>
+                </div>
+            </div>
+            <div class="bubble-wrap bubble-slide reveal-d1">
+                <div class="bubble-avatar" style="background:var(--maroon)">PK</div>
+                <div class="bubble" style="position:relative">
+                    <div class="b-name" style="color:var(--maroon)">Priya</div>
+                    <p>Oh and it's completely <strong>free to use</strong>.</p>
+                    <div style="position:absolute;bottom:-10px;left:16px;background:var(--cream);border-radius:100px;padding:3px 10px;font-size:12px;font-weight:600;box-shadow:0 1px 4px rgba(72,37,17,0.1);display:inline-flex;align-items:center;gap:4px;color:var(--maroon)"><i data-lucide="heart" style="width:14px;height:14px;fill:var(--maroon);stroke:var(--maroon)"></i> 5</div>
+                </div>
+            </div>
+            <div style="height:8px"></div>
+            <div class="bubble-wrap bubble-slide reveal-d2">
+                <div class="bubble-avatar" style="background:var(--orange)">VK</div>
+                <div class="bubble todo">
+                    <div class="b-name">Vikram</div>
+                    <p>Download Chattodo.</p>
+                    <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">
+                        <a href="#" class="btn-cta" style="font-size:13px"><i data-lucide="download" style="width:14px;height:14px"></i> Download Now</a>
+                    </div>
+                    <div class="b-todo-tag"><i data-lucide="circle-dot" style="width:10px;height:10px"></i> Marked as Todo</div>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
+<!-- TRUST STRIP -->
+<div class="trust-strip">
+    <div class="container">
+        <p><i data-lucide="shield-check"></i> Trust is not an afterthought. It is key. We are actively building Chattodo towards full privacy-by-design and ethical product principles &mdash; because that's the standard our users deserve.</p>
+    </div>
+</div>
+
+<!-- VALUES MARQUEE -->
+<div class="values-marquee">
+    <div class="marquee-track">
+        <span class="marquee-icon"><i data-lucide="heart-handshake"></i></span><span class="marquee-item">Human to human</span>
+        <span class="marquee-icon"><i data-lucide="users"></i></span><span class="marquee-item">5 + you</span>
+        <span class="marquee-icon"><i data-lucide="feather"></i></span><span class="marquee-item">Anti-bloat by design</span>
+        <span class="marquee-icon"><i data-lucide="message-circle"></i></span><span class="marquee-item">Just chatting, just working</span>
+        <span class="marquee-icon"><i data-lucide="lock"></i></span><span class="marquee-item">Your data, your property</span>
+        <span class="marquee-icon"><i data-lucide="gift"></i></span><span class="marquee-item">Free to use</span>
+        <span class="marquee-icon"><i data-lucide="focus"></i></span><span class="marquee-item">Focus over noise</span>
+        <span class="marquee-icon"><i data-lucide="shield-off"></i></span><span class="marquee-item">No bots, no AI noise</span>
+        <span class="marquee-icon"><i data-lucide="target"></i></span><span class="marquee-item">3 features, nothing more</span>
+        <span class="marquee-icon"><i data-lucide="heart-handshake"></i></span><span class="marquee-item">Human to human</span>
+        <span class="marquee-icon"><i data-lucide="users"></i></span><span class="marquee-item">5 + you</span>
+        <span class="marquee-icon"><i data-lucide="feather"></i></span><span class="marquee-item">Anti-bloat by design</span>
+        <span class="marquee-icon"><i data-lucide="message-circle"></i></span><span class="marquee-item">Just chatting, just working</span>
+        <span class="marquee-icon"><i data-lucide="lock"></i></span><span class="marquee-item">Your data, your property</span>
+        <span class="marquee-icon"><i data-lucide="gift"></i></span><span class="marquee-item">Free to use</span>
+        <span class="marquee-icon"><i data-lucide="focus"></i></span><span class="marquee-item">Focus over noise</span>
+        <span class="marquee-icon"><i data-lucide="shield-off"></i></span><span class="marquee-item">No bots, no AI noise</span>
+        <span class="marquee-icon"><i data-lucide="target"></i></span><span class="marquee-item">3 features, nothing more</span>
+    </div>
+</div>
+
+<!-- FOOTER -->
 <footer class="footer">
     <div class="container">
         <div class="footer-top">
             <div class="footer-brand">
                 <img src="assets/img/logo.webp" alt="Chattodo">
-                <p>The messaging experience that truly matters. Turn conversations into action.</p>
+                <p>Noise solved. Chat. Todo. Team.<br>Nothing more.</p>
             </div>
             <div class="footer-cols">
-                <div class="footer-col"><h5>Product</h5><ul><li><a href="#features">Features</a></li><li><a href="#how-it-works">How It Works</a></li><li><a href="#tasks">Tasks</a></li><li><a href="#download">Download</a></li></ul></div>
+                <div class="footer-col"><h5>Product</h5><ul><li><a href="#the-idea">Why Chattodo</a></li><li><a href="#features">Features</a></li><li><a href="#philosophy">Our Story</a></li><li><a href="#download">Download</a></li></ul></div>
                 <div class="footer-col"><h5>Legal</h5><ul><li><a href="privacy-terms.html">Privacy Policy</a></li><li><a href="privacy-terms.html#terms">Terms of Service</a></li></ul></div>
             </div>
         </div>
@@ -283,13 +295,31 @@
 (function(){
     lucide.createIcons();
     var nb=document.getElementById('navbar');
-    window.addEventListener('scroll',function(){nb.classList.toggle('scrolled',window.pageYOffset>40)});
+    var sp=document.getElementById('scrollProgress');
+
+    // Scroll: navbar + progress bar
+    window.addEventListener('scroll',function(){
+        nb.classList.toggle('scrolled',window.pageYOffset>40);
+        var h=document.documentElement.scrollHeight-window.innerHeight;
+        sp.style.width=(h>0?(window.pageYOffset/h)*100:0)+'%';
+    });
+
+    // Mobile menu
     var mt=document.getElementById('mobileToggle'),nl=document.getElementById('navLinks');
     mt.addEventListener('click',function(){nl.classList.toggle('open')});
     var lnks=nl.querySelectorAll('a');for(var i=0;i<lnks.length;i++){lnks[i].addEventListener('click',function(){nl.classList.remove('open')})}
-    var els=document.querySelectorAll('.reveal');
-    var obs=new IntersectionObserver(function(e){for(var j=0;j<e.length;j++){if(e[j].isIntersecting){e[j].target.classList.add('visible');obs.unobserve(e[j].target)}}},{threshold:0.1,rootMargin:'0px 0px -30px 0px'});
-    for(var k=0;k<els.length;k++){obs.observe(els[k])}
+
+    // Reveal observer — handles all animation classes
+    var allReveal=document.querySelectorAll('.reveal,.reveal-left,.reveal-right,.reveal-scale,.shimmer,.bubble-slide');
+    var revObs=new IntersectionObserver(function(e){for(var j=0;j<e.length;j++){if(e[j].isIntersecting){e[j].target.classList.add('visible');revObs.unobserve(e[j].target)}}},{threshold:0.1,rootMargin:'0px 0px -30px 0px'});
+    for(var k=0;k<allReveal.length;k++){revObs.observe(allReveal[k])}
+
+    // UI view row stagger
+    var uiViews=document.querySelectorAll('.ui-view');
+    var uiObs=new IntersectionObserver(function(e){for(var j=0;j<e.length;j++){if(e[j].isIntersecting){e[j].target.classList.add('in-view');uiObs.unobserve(e[j].target)}}},{threshold:0.2});
+    for(var v=0;v<uiViews.length;v++){uiObs.observe(uiViews[v])}
+
+    // Smooth scroll
     var anch=document.querySelectorAll('a[href^="#"]');
     for(var m=0;m<anch.length;m++){anch[m].addEventListener('click',function(ev){ev.preventDefault();var t=document.querySelector(this.getAttribute('href'));if(t){window.scrollTo({top:t.getBoundingClientRect().top+window.pageYOffset-nb.offsetHeight,behavior:'smooth'})}})}
 })();
