@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Opening Chattodo...</title>
+  <meta name="robots" content="noindex,nofollow" />
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background:
+        radial-gradient(circle at 10% 20%, #2a1a12 0%, transparent 40%),
+        radial-gradient(circle at 90% 80%, #3a1f17 0%, transparent 40%),
+        #0f1115;
+      color: #f3e9dc;
+      font-family: Inter, Segoe UI, Arial, sans-serif;
+    }
+    .card {
+      width: min(92vw, 480px);
+      border-radius: 18px;
+      border: 1px solid #d1c0a666;
+      background: linear-gradient(180deg, #2b1a13 0%, #211611 100%);
+      box-shadow: 0 14px 30px #00000055;
+      padding: 26px 22px 20px;
+      text-align: center;
+      box-sizing: border-box;
+    }
+    .brand {
+      display: inline-block;
+      margin: 0 0 8px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 11px;
+      letter-spacing: 0.7px;
+      font-weight: 700;
+      color: #f3e9dc;
+      background: #482511;
+      border: 1px solid #d1c0a655;
+    }
+    h1 {
+      margin: 0 0 10px;
+      font-size: 22px;
+      line-height: 1.2;
+      color: #f3e9dc;
+    }
+    p {
+      margin: 0 0 16px;
+      color: #d1c0a6;
+      line-height: 1.5;
+      font-size: 14px;
+    }
+    a.btn {
+      display: inline-block;
+      text-decoration: none;
+      background: linear-gradient(135deg, #34b7f1 0%, #59c8fb 100%);
+      color: #fff;
+      border-radius: 12px;
+      padding: 11px 18px;
+      font-weight: 700;
+      font-size: 14px;
+      box-shadow: 0 8px 18px #34b7f144;
+    }
+    .hint {
+      margin-top: 12px;
+      font-size: 12px;
+      color: #d1c0a6b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="brand">CHATTODO</div>
+    <h1>Opening Chattodo...</h1>
+    <p>
+      If the app is installed, it should open automatically.
+      If not, you can continue on the website.
+    </p>
+    <a class="btn" href="https://chattodo.co">Continue to Website</a>
+    <div class="hint">You can close this page after the app opens.</div>
+  </div>
+
+  <script>
+    (function() {
+      var fallback = "https://chattodo.co?ref=invite_email";
+      var appLink = "chattodo://profile";
+      var opened = false;
+
+      function goToFallback() {
+        if (!opened) {
+          window.location.replace(fallback);
+        }
+      }
+
+      window.addEventListener("blur", function() {
+        opened = true;
+      });
+      document.addEventListener("visibilitychange", function() {
+        if (document.hidden) {
+          opened = true;
+        }
+      });
+
+      setTimeout(function() {
+        window.location.href = appLink;
+      }, 50);
+      setTimeout(goToFallback, 1400);
+    })();
+  </script>
+</body>
+</html>
