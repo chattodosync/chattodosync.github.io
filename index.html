@@ -13,6 +13,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     <link rel="stylesheet" href="assets/css/main.css">
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/12.9.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.9.0/firebase-analytics.js";
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyA-hCL2fNdF3RD_0APX8eVnPTUQNe25C_0",
+        authDomain: "chattodo-apps.firebaseapp.com",
+        projectId: "chattodo-apps",
+        appId: "1:1035673617495:web:96f2fe8ee126aa0ada4f12",
+        measurementId: "G-24CF4X1N99"
+      };
+
+      const app = initializeApp(firebaseConfig);
+      getAnalytics(app);
+    </script>
 </head>
 <body>
 
@@ -25,7 +40,7 @@
             <li><a href="#features">Features</a></li>
             <li><a href="#how-it-works">How It Works</a></li>
             <li><a href="#philosophy">Philosophy</a></li>
-            <li><a href="#download" class="btn-cta"><i data-lucide="download" style="width:14px;height:14px"></i> Download</a></li>
+            <li><a href="#download" class="btn-cta"><i data-lucide="gem" style="width:15px;height:15px;color:var(--orange)"></i> Get Access to Alpha</a></li>
         </ul>
         <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
             <span></span><span></span><span></span>
@@ -38,7 +53,7 @@
     <div class="hero-glow"></div>
     <div class="container">
         <div class="hero-inner" style="max-width:720px">
-            <div class="hero-tag"><span class="dot"></span> Available on Android</div>
+            <div class="hero-tag"><span class="dot"></span> Open Alpha on Android</div>
             <h1>Noise <span class="accent-salmon">Solved.</span></h1>
             <div class="hero-features">
                 <span class="hero-feat">Chat.</span>
@@ -57,7 +72,7 @@
                 <p style="margin-top:4px"><strong>We are anti-bloat by design.</strong></p>
             </div>
             <div class="hero-actions">
-                <a href="#download" class="btn-cta"><i data-lucide="download" style="width:16px;height:16px"></i> Download Chattodo</a>
+                <a href="https://appdistribution.firebase.google.com/pub/i/22590c84a9724f8e" target="_blank" rel="noopener noreferrer" class="btn-cta"><i data-lucide="gem" style="width:18px;height:18px;color:var(--orange)"></i> Get Access to Alpha</a>
                 <a href="#the-idea" class="btn-outline"><i data-lucide="arrow-down" style="width:16px;height:16px"></i> Learn More</a>
             </div>
         </div>
@@ -91,6 +106,7 @@
         <p class="section-desc mx-auto reveal reveal-d2" style="margin-top:8px">Not everyone needs a seat in your car. We encourage keeping your circle tight &mdash; but how you operate is up to you.</p>
     </div>
 </section>
+
 <!-- FEATURES -->
 <section class="section features-section" id="features">
     <div class="container">
@@ -208,7 +224,20 @@
     </div>
 </section>
 
-<!-- FINAL: The sum-up + Download CTA -->
+<!-- THE PULSE (lightweight mention) -->
+<section class="section" id="pulse" style="background:var(--cream)">
+    <div class="container" style="max-width:920px">
+        <div class="feature reveal" style="max-width:760px;margin:0 auto;text-align:left">
+            <span class="section-label"><i data-lucide="activity"></i> The Pulse</span>
+            <h3 style="font-size:1.7rem;margin-top:10px">Understand your focus behavior over time.</h3>
+            <p style="margin-top:12px">The Pulse is Chattodo's <strong>focus insight layer</strong>. It helps you see whether your communication patterns are supporting <strong>deep work</strong> or creating distraction.</p>
+            <p style="margin-top:10px">It looks at how much of your activity happens in <strong>Focus</strong> versus <strong>Later</strong>, and gives you a clear <strong>Focus Quality signal</strong> you can improve week by week.</p>
+            <p style="margin-top:10px">The goal is simple: help teams stay <strong>intentional</strong>, reduce <strong>context switching</strong>, and protect meaningful work.</p>
+        </div>
+    </div>
+</section>
+
+<!-- FINAL: The sum-up + Alpha CTA -->
 <section class="section" id="download">
     <div class="container">
         <div class="chat-thread centered">
@@ -232,9 +261,9 @@
                 <div class="bubble-avatar" style="background:var(--orange)">VK</div>
                 <div class="bubble todo">
                     <div class="b-name">Vikram</div>
-                    <p>Download Chattodo.</p>
+                    <p>Get access to Chattodo alpha.</p>
                     <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">
-                        <a href="#" class="btn-cta" style="font-size:13px"><i data-lucide="download" style="width:14px;height:14px"></i> Download Now</a>
+                        <a href="https://appdistribution.firebase.google.com/pub/i/22590c84a9724f8e" target="_blank" rel="noopener noreferrer" class="btn-cta" style="font-size:13px"><i data-lucide="gem" style="width:16px;height:16px;color:var(--orange)"></i> Get Access to Alpha</a>
                     </div>
                     <div class="b-todo-tag"><i data-lucide="circle-dot" style="width:10px;height:10px"></i> Marked as Todo</div>
                 </div>
@@ -288,7 +317,7 @@
                 <p>Noise Solved.<br> Chat. Todo. Team.<br>Nothing More.</p>
             </div>
             <div class="footer-cols">
-                <div class="footer-col"><h5>Product</h5><ul><li><a href="#features">Features</a></li><li><a href="#philosophy">Our Story</a></li><li><a href="signal.html">The Signal</a></li><li><a href="#download">Download</a></li></ul></div>
+                <div class="footer-col"><h5>Product</h5><ul><li><a href="#features">Features</a></li><li><a href="#pulse">The Pulse</a></li><li><a href="#philosophy">Our Story</a></li><li><a href="signal.html">The Signal</a></li><li><a href="https://appdistribution.firebase.google.com/pub/i/22590c84a9724f8e" target="_blank" rel="noopener noreferrer">Get Access to Alpha</a></li></ul></div>
                 <div class="footer-col"><h5>Legal</h5><ul><li><a href="privacy-terms.html">Privacy Policy</a></li><li><a href="privacy-terms.html#terms">Terms of Service</a></li></ul></div>
             </div>
         </div>

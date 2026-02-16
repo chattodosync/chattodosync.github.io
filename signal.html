@@ -11,6 +11,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     <link rel="stylesheet" href="assets/css/main.css">
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/12.9.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.9.0/firebase-analytics.js";
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyA-hCL2fNdF3RD_0APX8eVnPTUQNe25C_0",
+        authDomain: "chattodo-apps.firebaseapp.com",
+        projectId: "chattodo-apps",
+        appId: "1:1035673617495:web:96f2fe8ee126aa0ada4f12",
+        measurementId: "G-24CF4X1N99"
+      };
+
+      const app = initializeApp(firebaseConfig);
+      getAnalytics(app);
+    </script>
     <style>
         .vision-page{padding:140px 0 80px}
         .vision-page .container{max-width:680px}
@@ -120,7 +135,7 @@
 
         <div class="v-cta reveal">
             <p>If this resonates with you, Chattodo is yours to try.</p>
-            <a href="#" class="btn-cta" style="padding:14px 32px;font-size:15px"><i data-lucide="download" style="width:16px;height:16px"></i> Download Chattodo</a>
+            <a href="https://appdistribution.firebase.google.com/pub/i/22590c84a9724f8e" target="_blank" rel="noopener noreferrer" class="btn-cta" style="padding:14px 32px;font-size:15px"><i data-lucide="gem" style="width:18px;height:18px;color:var(--orange)"></i> Get Access to Alpha</a>
         </div>
 
     </div>
@@ -134,7 +149,7 @@
                 <p>Noise Solved.<br> Chat. Todo. Team.<br>Nothing More.</p>
             </div>
             <div class="footer-cols">
-                <div class="footer-col"><h5>Product</h5><ul><li><a href="index.html">Home</a></li><li><a href="index.html#features">Features</a></li><li><a href="index.html#download">Download</a></li></ul></div>
+                <div class="footer-col"><h5>Product</h5><ul><li><a href="index.html">Home</a></li><li><a href="index.html#features">Features</a></li><li><a href="index.html#pulse">The Pulse</a></li><li><a href="https://appdistribution.firebase.google.com/pub/i/22590c84a9724f8e" target="_blank" rel="noopener noreferrer">Get Access to Alpha</a></li></ul></div>
                 <div class="footer-col"><h5>Legal</h5><ul><li><a href="privacy-terms.html">Privacy Policy</a></li><li><a href="privacy-terms.html#terms">Terms of Service</a></li></ul></div>
             </div>
         </div>
