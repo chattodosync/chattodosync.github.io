@@ -15,7 +15,7 @@ The site reflects Chattodo's latest product direction:
 
 Chattodo is currently available via Firebase App Distribution:
 
-- Get Access to Alpha: https://appdistribution.firebase.google.com/pub/i/22590c84a9724f8e
+- Get Access to Alpha: https://appdistribution.firebase.google.com/pub/i/358d0bb018c60b0c
 
 ## Main files
 
